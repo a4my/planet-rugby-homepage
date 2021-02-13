@@ -1,0 +1,88 @@
+.contact {
+    position: relative;
+    background-color: $primaryColor;
+    background-image: url('../images/contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: 95vh;
+
+    &__form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: auto;
+        background: #f9f9f9dc;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        display: flex;
+        justify-content: center;
+
+        &__title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 26px;
+            color: $primaryColor-light;
+            font-weight: 100;
+            margin: 10px auto 10px auto;
+            text-align: center;
+        }
+
+        &__input {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin: 5px 0px;
+            padding: 10px;
+            width: 370px;
+            border: 2px solid $primaryColor-light;
+            color: $primaryColor;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        &__btn {
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            background-color: $primaryColor-light;
+            border: none;
+            border-radius: 10px;
+            color: $color-white;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $color-white;
+                color: $primaryColor-light;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+@media only screen and (max-width:405px) {
+    .contact__form {
+        width: 350px;
+
+        &__input {
+            width: 340px;
+        }
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .contact__form {
+        width: 300px;
+
+        &__input {
+            width: 290px;
+        }
+    }
+}

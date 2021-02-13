@@ -1,0 +1,29 @@
+$primaryColor: hsl(207, 82%, 13%);
+$primaryColor-light: hsl(207, 94%, 51%);
+
+$headlineColor-2: hsl(345, 91%, 29%);
+$headlineColor-3: hsl(150, 91%, 29%);
+$headlineColor-4: hsl(32, 94%, 54%);
+
+
+$color-white: #fff;
+$color-grey: #f7f7f7;
+$color-black: #000;
+
+@import './index/navbar';
+@import './news/header';
+@import './index/scrolling-banner';
+@import './news/section-1';
+@import './news/section-2';
+@import './news/section-3';
+@import './index/footer';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

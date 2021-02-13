@@ -1,0 +1,188 @@
+header {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primaryColor;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+
+  img {
+      position: absolute;
+      top: 7px;
+      left: 20px;
+      height: 30px;
+      width: auto;
+  }
+}
+
+.navbar {
+
+  &__list {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      text-transform: uppercase;
+  }
+  
+  &__item {
+      padding: 0px 30px;  
+      animation: flash 25s linear infinite;
+  }
+
+  &__link {
+      color: $color-white;
+      text-decoration: none;
+
+      &:hover {
+          color: $primaryColor-light;
+          border-bottom: 1px solid $primaryColor-light;
+          }
+
+      &__active {
+          border: 2px solid $color-white;
+          border-radius: 5px;
+          color: $primaryColor-light;
+          padding: 5px 15px;
+
+          &:hover {
+            border-bottom: 2px solid $color-white;
+          }
+      }
+  }
+}
+
+.rotate:hover {
+  animation: rotate-btn .5s linear 5;
+}
+
+
+// ---- HAMBURGER MENU ---- //
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+// --- ANIMATION --- //
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes flash {
+    0% {
+      color: #fff;
+      transform: scale(1);
+    }
+
+    98% {
+      color: #fff;
+      transform: scale(1);
+    }
+
+    99% {
+      color: $primaryColor-light;
+      transform: scale(1.1);
+    }
+
+    100% {
+      color: #fff;
+      transform: scale(1);
+    }
+}
+
+
+// --- MDEIA QUERIES --- //
+
+@media only screen and (max-width: 780px ){
+  .navbar {
+      
+      &__item {
+          padding: 0px 15px;
+      }
+
+      &__link__active {
+          padding: 2px 5px;
+      }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex: 3;
+  }
+  .logo-container {
+    transform: translateX(-370%);
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    width: 100%;
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    text-align: center;
+    padding-bottom: 10px;
+
+    &:first-child {
+        margin-top: 40px;
+    }
+  }
+
+  .navbar.active {
+    display: flex;
+    background-color: $primaryColor;
+  }
+
+  .navbar__link__active {
+    border: none;
+  }
+
+  header {
+      justify-content: normal;
+
+      img {
+          position: absolute;
+          top: 9px;
+          left: 20px;
+          height: 25px;
+          width: auto;
+      }
+  }
+}
+
+

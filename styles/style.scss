@@ -6,16 +6,16 @@ $color-white: #fff;
 $color-grey: #f7f7f7;
 $color-black: #000;
 
-@import './navbar';
-@import './header';
-@import './scrolling-banner';
-@import './section-1';
-@import './section-2';
-@import './section-3';
-@import './section-4';
-@import './section-5';
-@import './newsletter';
-@import './footer';
+@import './index/navbar';
+@import './index/header';
+@import './index/scrolling-banner';
+@import './index/section-1';
+@import './index/section-2';
+@import './index/section-3';
+@import './index/section-4';
+@import './index/section-5';
+@import './index/newsletter';
+@import './index/footer';
 
 * {
     margin: 0px;

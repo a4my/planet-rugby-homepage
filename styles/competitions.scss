@@ -1,0 +1,22 @@
+$primaryColor: hsl(0, 86%, 14%);
+$primaryColor-light: hsl(0, 91%, 45%);
+$primaryColor-lighter: hsl(0, 91%, 29%);
+
+$color-white: #fff;
+$color-grey: #f7f7f7;
+$color-black: #000;
+
+@import './index/navbar';
+@import './competitions/header';
+@import './competitions/section-1';
+@import './index/footer';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

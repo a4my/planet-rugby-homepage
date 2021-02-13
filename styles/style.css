@@ -1,27 +1,39 @@
-.logo-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+header {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #06243c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
-.navbar {
-  height: 5vh;
+header img {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  height: 30px;
   width: auto;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 
 .navbar__item {
@@ -31,12 +43,13 @@
 }
 
 .navbar__link {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
 .navbar__link:hover {
   color: #0d8ef8;
+  border-bottom: 1px solid #0d8ef8;
 }
 
 .navbar__link__active {
@@ -44,6 +57,10 @@
   border-radius: 5px;
   color: #0d8ef8;
   padding: 5px 15px;
+}
+
+.navbar__link__active:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .rotate:hover {
@@ -72,100 +89,6 @@
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
-}
-
-@media all and (max-width: 1300px) {
-  .navbar {
-    -webkit-box-flex: 6;
-        -ms-flex: 6;
-            flex: 6;
-  }
-}
-
-@media only screen and (max-device-width: 767px) {
-  .navbar {
-    -webkit-box-flex: 6;
-        -ms-flex: 6;
-            flex: 6;
-  }
-  .navbar__item {
-    padding: 0px 10px;
-  }
-  .navbar__link__active {
-    padding: 1px 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .logo-container {
-    -webkit-transform: translateX(-370%);
-            transform: translateX(-370%);
-  }
-  .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar {
-    width: 100%;
-    display: none;
-  }
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .navbar ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar li {
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  .navbar.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar__link__active {
-    border: none;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .logo-container {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .logo-container {
-    -webkit-transform: translateX(-250%);
-            transform: translateX(-250%);
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .logo-container {
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-}
-
-@media all and (max-width: 300px) {
-  .logo-container {
-    -webkit-transform: translateX(-175%);
-            transform: translateX(-175%);
-  }
 }
 
 @-webkit-keyframes rotate-btn {
@@ -236,24 +159,78 @@
   }
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #06243c;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 20;
+@media only screen and (max-width: 780px) {
+  .navbar__item {
+    padding: 0px 15px;
+  }
+  .navbar__link__active {
+    padding: 2px 5px;
+  }
 }
 
-header img {
-  height: 30px;
-  width: auto;
-  margin: 5px 20px;
+@media only screen and (max-width: 600px) {
+  .navbar {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .logo-container {
+    -webkit-transform: translateX(-370%);
+            transform: translateX(-370%);
+  }
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+    display: none;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar li {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .navbar li:first-child {
+    margin-top: 40px;
+  }
+  .navbar.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #06243c;
+  }
+  .navbar__link__active {
+    border: none;
+  }
+  header {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  header img {
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    height: 25px;
+    width: auto;
+  }
 }
 
 .hero {
@@ -612,6 +589,7 @@ header img {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #06243c;
+  z-index: 1000;
 }
 
 .sample-item {
@@ -1671,6 +1649,13 @@ header img {
     width: 250px;
     height: 250px;
   }
+  .flip-card__back__title {
+    font-size: 22px;
+    padding: 10px 2px 25px 2px;
+  }
+  .flip-card__back__text {
+    margin: 2px 0px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1952,7 +1937,7 @@ header img {
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
-  height: 500px;
+  height: 520px;
 }
 
 .newsletter__overlay {
@@ -2037,6 +2022,7 @@ header img {
   height: 370px;
   background-color: #06243c;
   padding-top: 50px;
+  z-index: 2000;
 }
 
 .links {

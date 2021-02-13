@@ -1,0 +1,20 @@
+$primaryColor: hsl(130, 82%, 13%);
+$primaryColor-light: hsl(130, 94%, 51%);
+$primaryColor-lighter: hsl(130, 91%, 29%);
+
+$color-white: #fff;
+$color-grey: #f7f7f7;
+$color-black: #000;
+
+@import './index/navbar';
+@import './index/footer';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

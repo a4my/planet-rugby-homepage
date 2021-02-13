@@ -1,0 +1,150 @@
+.header {
+    position: relative;
+    background-image: url('../images/competitions/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 60vh;
+    width: 100%;
+    z-index: 1;
+    
+  &__overlay {
+    position: absolute;
+    background-image: linear-gradient(to right, $primaryColor-light, $primaryColor  );
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 2;
+  }
+
+  &__img {
+      height: 100px;
+      width: auto;
+      z-index: 1;
+  }
+}
+
+.rotate-1 {
+  animation: rotate-1 20s linear infinite;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  z-index: 0;
+}
+
+.rotate-5 {
+  animation: rotate-5 10s ease;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: 0;
+}
+
+
+// ANIMATIONS
+
+@keyframes rotate-1 {
+  0%, 100%{left:-10%; bottom: -20%;}
+	50%		{left:10%; bottom: 10%;}
+  66.666%	{left:15%; bottom: 0%;}
+	83.333% {left:20%; bottom: -25%;}
+}
+
+@keyframes rotate-5 {
+  0% {left:50%; bottom: -20%;}
+  50% {left: 50%; bottom: 50%}
+  100% { left: 50%; top: 50%}
+}
+
+
+@keyframes rotateY-1 {
+    0%, 100% {
+        transform: rotateY(0);
+    }
+
+    16% {
+        transform: rotateY(-90deg );
+    }
+
+    33% {
+        transform: rotateY(0deg);
+    }
+
+    66% {
+        transform: rotateY(900deg);
+    }
+
+    83% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes drift-L {
+  0% {
+    transform: rotate(0deg)
+    }
+  100% {
+    transform: rotate(-360deg)
+    }
+}
+
+
+
+// // NEW METHOD
+
+// ul.fireflies{
+//     list-style:none;
+// }
+
+// .firefly {
+// 	background-size: cover;
+// 	width:21px; 
+// 	top:-20px;
+// 	height:21px;
+//     position:absolute;
+// 	// animation: 
+// 	// 	leftright 45s infinite cubic-bezier(.39,.0,.63,1),
+// 	// 	updown 38s infinite 1.25s cubic-bezier(.39,.0,.63,1);
+// }
+// .firefly:nth-of-type(2){
+//     animation-delay:0s;
+//     z-index: 3000;
+//     animation-duration:17s, 8s;
+//     animation-fill-mode:backwards, backwards;
+//     transform: translateX(random(50) - 50vw) translateY(random(50) - 50vh) scale(random(75) / 100 + .25)
+// }
+
+// .firefly:nth-of-type(3){
+//     animation-delay:0s;
+//     z-index: 3000;
+//     animation-duration:17s, 8s;
+//     animation-fill-mode:backwards, backwards;
+//     transform: translateX(random(75) - 50vw) translateY(random(25) - 50vh) scale(random(75) / 100 + .25)
+// }
+
+// .firefly:nth-of-type(4){
+//     animation-delay:0s;
+//     z-index: 3000;
+//     animation-duration:17s, 8s;
+//     animation-fill-mode:backwards, backwards;
+//     transform: translateX(random(10) - 50vw) translateY(random(-30) - 50vh) scale(random(75) / 100 + .25)
+// }
+
+
+
+// @keyframes leftright {
+//   0%, 100%{left:20%;}
+// 	16.666%	{left:90%;}
+// 	33.333% {left:10%;}
+// 	50%			{left:50%;}
+//   66.666%	{left:70%;}
+// 	83.333% {left:40%;}
+// }
+
+// @keyframes updown {
+//   0%, 100%{top:0px;width:20px;height:20px}
+//   25%{top:70%; }
+//     50%{top:50%;width:30px;height:30px}
+// }
