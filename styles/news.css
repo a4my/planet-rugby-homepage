@@ -235,7 +235,7 @@ header img {
 
 .header {
   position: relative;
-  background-image: url("../images/news/header.jpg");
+  background-image: url("../../images/news/header.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -656,25 +656,25 @@ header img {
 
 .section-2__tabcontent--1 {
   background-color: #0d8ef8;
-  background-image: url(../images/news/headline1.jpg);
+  background-image: url(../../images/news/headline1.jpg);
   border: 4px solid #0d8ef8;
 }
 
 .section-2__tabcontent--2 {
   background-color: #8d0728;
-  background-image: url(../images/news/headline2.jpg);
+  background-image: url(../../images/news/headline2.jpg);
   border: 4px solid #8d0728;
 }
 
 .section-2__tabcontent--3 {
   background-color: #078d4a;
-  background-image: url(../images/news/headline3.jpg);
+  background-image: url(../../images/news/headline3.jpg);
   border: 4px solid #078d4a;
 }
 
 .section-2__tabcontent--4 {
   background-color: #f8911b;
-  background-image: url(../images/news/headline4.jpg);
+  background-image: url(../../images/news/headline4.jpg);
   border: 4px solid #f8911b;
 }
 
