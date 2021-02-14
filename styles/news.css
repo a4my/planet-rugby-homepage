@@ -365,7 +365,7 @@ header img {
 
 @media only screen and (max-width: 550px) {
   .header__img-1 {
-    left: 50%;
+    left: 52%;
     height: 465px;
   }
   .header__img-2 {
@@ -388,7 +388,7 @@ header img {
 
 @media only screen and (max-width: 500px) {
   .header__img-1 {
-    left: 50%;
+    left: 52%;
     height: 415px;
   }
   .header__img-2 {
@@ -411,7 +411,7 @@ header img {
 
 @media only screen and (max-width: 400px) {
   .header__img-1 {
-    left: 50%;
+    left: 52%;
     height: 315px;
   }
   .header__img-2 {
@@ -799,16 +799,17 @@ header img {
 
 @media only screen and (max-width: 439px) {
   .section-2 {
-    height: 330px;
+    height: 420px;
   }
   .section-2__tablink {
-    width: 75px;
-    font-size: 9px;
-    padding: 8px;
+    width: 190px;
+    font-size: 12px;
+    padding: 5px;
   }
   .section-2__tabcontent {
-    height: 150px;
-    width: 300px;
+    margin-top: 10px;
+    height: 170px;
+    width: 380px;
   }
   .section-2__tabcontent__titlebox {
     width: 280px;
@@ -820,26 +821,29 @@ header img {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 404px) {
+  .section-2 {
+    height: 420px;
+  }
+  .section-2__tabcontent {
+    margin-top: 10px;
+    height: 165px;
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   .section-2 {
     height: 330px;
   }
   .section-2__tablink {
     width: 75px;
-    font-size: px;
+    font-size: 8px;
     padding: 3px;
   }
   .section-2__tabcontent {
     height: 150px;
     width: 300px;
-  }
-  .section-2__tabcontent__titlebox {
-    width: 280px;
-    bottom: 5px;
-    padding: 2px;
-  }
-  .section-2__tabcontent__titlebox p {
-    font-size: 10px;
   }
 }
 

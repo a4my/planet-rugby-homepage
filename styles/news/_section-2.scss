@@ -226,17 +226,18 @@
 
 @media only screen and (max-width: 439px) {
     .section-2 {
-        height: 330px;
+        height: 420px;
 
         &__tablink {
-            width: 75px;   
-            font-size: 9px; 
-            padding: 8px;        
+            width: 190px;   
+            font-size: 12px; 
+            padding: 5px;        
         }
 
         &__tabcontent {
-            height: 150px;
-            width: 300px;
+            margin-top: 10px;
+            height: 170px;
+            width: 380px;
 
             &__titlebox {
                 width: 280px;
@@ -251,29 +252,31 @@
     }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 404px) {
+    .section-2 {
+        height: 420px;
+
+        &__tabcontent {
+            margin-top: 10px;
+            height: 165px;
+            width: 330px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
     .section-2 {
         height: 330px;
 
         &__tablink {
             width: 75px;   
-            font-size: px; 
+            font-size: 8px; 
             padding: 3px;        
         }
 
         &__tabcontent {
             height: 150px;
             width: 300px;
-
-            &__titlebox {
-                width: 280px;
-                bottom: 5px;
-                padding: 2px;
-
-                & p {
-                    font-size: 10px;
-                }
-            }
         }
     }
 }
