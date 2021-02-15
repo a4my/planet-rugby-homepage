@@ -1,6 +1,6 @@
 .section-3 {
     background-color: $color-white;
-    height: 2000px;
+    height: 2125px;
 
     &__titlebox {
         background-color: $primaryColor;
@@ -20,12 +20,12 @@
 
     &__side {
         // flex: 0.5;
-        position: absolute;
-        left: 12.5%;
-        transform: translateX(-50%);
+        // position: absolute;
+        // left: 12.5%;
+        // transform: translateX(-50%);
         // float: left;
         flex-direction: row;
-        width: 250px;
+        width: 25%;
         margin: 30px;
         
 
@@ -75,9 +75,9 @@
         // flex: 1;
         // position: absolute;
         // left: 50%;
-        // transform: translateX(-55%);
+        transform: translateX(-19%);
         // float: right;
-        width: 600px;
+        width: 75%;
         margin: 30px auto;
         text-align: center;
         
@@ -101,6 +101,8 @@
                 border: 2px solid $primaryColor-light;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 padding: 10px;
+                margin: 30px auto;
+                text-align: center;
             }
 
             & h1 {
@@ -137,3 +139,11 @@
     }
 }
 
+@media only screen and (max-width: 1220px) {
+    .section-3 {
+
+        &__side {
+            
+        }
+    }
+}

@@ -849,7 +849,7 @@ header img {
 
 .section-3 {
   background-color: #fff;
-  height: 2000px;
+  height: 2125px;
 }
 
 .section-3__titlebox {
@@ -872,15 +872,11 @@ header img {
 }
 
 .section-3__side {
-  position: absolute;
-  left: 12.5%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 250px;
+  width: 25%;
   margin: 30px;
 }
 
@@ -928,7 +924,9 @@ header img {
 }
 
 .section-3__main {
-  width: 600px;
+  -webkit-transform: translateX(-19%);
+          transform: translateX(-19%);
+  width: 75%;
   margin: 30px auto;
   text-align: center;
 }
@@ -956,6 +954,8 @@ header img {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .section-3__main__item h1 {
