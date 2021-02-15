@@ -23,8 +23,11 @@
         position: absolute;
         left: 12.5%;
         transform: translateX(-50%);
+        // float: left;
+        flex-direction: row;
         width: 250px;
         margin: 30px;
+        
 
         &__item {
             margin-bottom: 30px;
@@ -70,11 +73,13 @@
 
     &__main {
         // flex: 1;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-55%);
+        // position: absolute;
+        // left: 50%;
+        // transform: translateX(-55%);
+        // float: right;
         width: 600px;
-        margin: 30px;
+        margin: 30px auto;
+        text-align: center;
         
         &__item {
             margin-bottom: 30px;
@@ -132,31 +137,3 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    .section-3 {
-
-        &__side {
-            left: 17.5%;
-        }
-
-        &__main {
-            left: 65%;
-        }
-    }
-}
-
-@media only screen and (max-width: 970px) {
-    .section-3 {
-
-        &__side {
-            position: static;
-            transform: none;
-            display: block;
-        }
-
-        &__main {
-            position: static;
-            transform: none;
-        }
-    }
-}
