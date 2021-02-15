@@ -993,6 +993,29 @@ header img {
   color: #fff;
 }
 
+@media only screen and (max-width: 1300px) {
+  .section-3__side {
+    left: 17.5%;
+  }
+  .section-3__main {
+    left: 65%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .section-3__side {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    display: block;
+  }
+  .section-3__main {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .footer {
   height: 370px;
   background-color: #06243c;

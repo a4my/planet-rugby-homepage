@@ -131,3 +131,32 @@
             }
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .section-3 {
+
+        &__side {
+            left: 17.5%;
+        }
+
+        &__main {
+            left: 65%;
+        }
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .section-3 {
+
+        &__side {
+            position: static;
+            transform: none;
+            display: block;
+        }
+
+        &__main {
+            position: static;
+            transform: none;
+        }
+    }
+}
