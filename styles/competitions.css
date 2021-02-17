@@ -272,6 +272,71 @@ header img {
   z-index: 0;
 }
 
+.header__img--1--spark1 {
+  height: 10px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: spark-1 10s linear infinite;
+          animation: spark-1 10s linear infinite;
+}
+
+.header__img--1--spark2 {
+  height: 10px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: spark-2 10s linear infinite;
+          animation: spark-2 10s linear infinite;
+}
+
+.header__img--1--spark3 {
+  height: 10px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: spark-3 10s linear infinite;
+          animation: spark-3 10s linear infinite;
+}
+
+.header__img--1--spark4 {
+  height: 10px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: spark-4 10s linear infinite;
+          animation: spark-4 10s linear infinite;
+}
+
+.header__img--1--spark5 {
+  height: 10px;
+  width: auto;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: spark-5 10s linear infinite;
+          animation: spark-5 10s linear infinite;
+}
+
 .header__img--2 {
   -webkit-animation: rotate-2 10s linear infinite;
           animation: rotate-2 10s linear infinite;
@@ -453,6 +518,286 @@ header img {
   }
 }
 
+@-webkit-keyframes spark-1 {
+  0% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 0;
+  }
+  50% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 0;
+  }
+  51% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 1;
+  }
+  55% {
+    left: 11%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  100% {
+    left: 11%;
+    bottom: 31%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-1 {
+  0% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 0;
+  }
+  50% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 0;
+  }
+  51% {
+    left: 12%;
+    bottom: 29%;
+    opacity: 1;
+  }
+  55% {
+    left: 11%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  100% {
+    left: 11%;
+    bottom: 31%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-2 {
+  0% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  50% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  51% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 1;
+  }
+  55% {
+    left: 8%;
+    bottom: 34%;
+    opacity: 0;
+  }
+  100% {
+    left: 8%;
+    bottom: 34%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-2 {
+  0% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  50% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  51% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 1;
+  }
+  55% {
+    left: 8%;
+    bottom: 34%;
+    opacity: 0;
+  }
+  100% {
+    left: 8%;
+    bottom: 34%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-3 {
+  0% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 0;
+  }
+  50% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 0;
+  }
+  51% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 1;
+  }
+  56% {
+    left: 16%;
+    bottom: 15%;
+    opacity: 0;
+  }
+  100% {
+    left: 16%;
+    bottom: 15%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-3 {
+  0% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 0;
+  }
+  50% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 0;
+  }
+  51% {
+    left: 15%;
+    bottom: 14%;
+    opacity: 1;
+  }
+  56% {
+    left: 16%;
+    bottom: 15%;
+    opacity: 0;
+  }
+  100% {
+    left: 16%;
+    bottom: 15%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-4 {
+  0% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 0;
+  }
+  50% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 0;
+  }
+  51% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 1;
+  }
+  56% {
+    left: 16%;
+    bottom: 16%;
+    opacity: 0;
+  }
+  100% {
+    left: 16%;
+    bottom: 16%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-4 {
+  0% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 0;
+  }
+  50% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 0;
+  }
+  51% {
+    left: 14%;
+    bottom: 13%;
+    opacity: 1;
+  }
+  56% {
+    left: 16%;
+    bottom: 16%;
+    opacity: 0;
+  }
+  100% {
+    left: 16%;
+    bottom: 16%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-5 {
+  0% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  50% {
+    left: 12%;
+    bottom: 32%;
+    opacity: 0;
+  }
+  51% {
+    left: 12%;
+    bottom: 32%;
+    opacity: 1;
+  }
+  55% {
+    left: 8%;
+    bottom: 38%;
+    opacity: 0;
+  }
+  100% {
+    left: 8%;
+    bottom: 38%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-5 {
+  0% {
+    left: 10%;
+    bottom: 31%;
+    opacity: 0;
+  }
+  50% {
+    left: 12%;
+    bottom: 32%;
+    opacity: 0;
+  }
+  51% {
+    left: 12%;
+    bottom: 32%;
+    opacity: 1;
+  }
+  55% {
+    left: 8%;
+    bottom: 38%;
+    opacity: 0;
+  }
+  100% {
+    left: 8%;
+    bottom: 38%;
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes jump-1 {
   0% {
     right: 10%;
@@ -503,7 +848,7 @@ header img {
     bottom: -3%;
   }
   74% {
-    right: 5%;
+    right: 6%;
     bottom: 1%;
   }
   76% {
@@ -515,8 +860,8 @@ header img {
     bottom: -3%;
   }
   100% {
-    right: -5%;
-    bottom: 10%;
+    right: -2%;
+    bottom: 1%;
   }
 }
 
@@ -570,7 +915,7 @@ header img {
     bottom: -3%;
   }
   74% {
-    right: 5%;
+    right: 6%;
     bottom: 1%;
   }
   76% {
@@ -582,8 +927,8 @@ header img {
     bottom: -3%;
   }
   100% {
-    right: -5%;
-    bottom: 10%;
+    right: -2%;
+    bottom: 1%;
   }
 }
 
@@ -611,14 +956,20 @@ header img {
   61% {
     right: 50;
     bottom: 5%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   65% {
     right: 50;
     bottom: -19%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
     right: 50;
     bottom: -19%;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
@@ -646,14 +997,20 @@ header img {
   61% {
     right: 50;
     bottom: 5%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   65% {
     right: 50;
     bottom: -19%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
     right: 50;
     bottom: -19%;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
