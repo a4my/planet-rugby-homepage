@@ -390,6 +390,41 @@ header img {
           animation: sing 30s linear infinite;
 }
 
+.header__img--5 {
+  -webkit-animation: run 30s linear infinite;
+          animation: run 30s linear infinite;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  z-index: 0;
+}
+
+.header__img--5--1 {
+  -webkit-animation: run-1 30s linear infinite;
+          animation: run-1 30s linear infinite;
+  position: absolute;
+  top: 15%;
+  right: 22.5%;
+  opacity: 0;
+}
+
+.header__img--5--2 {
+  -webkit-animation: run-2 30s linear infinite;
+          animation: run-2 30s linear infinite;
+}
+
+.header__img--5--3 {
+  -webkit-animation: run-3 30s linear infinite;
+          animation: run-3 30s linear infinite;
+}
+
+.header__img--5--4 {
+  -webkit-animation: run-4 30s linear infinite;
+          animation: run-4 30s linear infinite;
+}
+
 @-webkit-keyframes rotate-1 {
   0%, 100% {
     left: -10%;
@@ -1109,6 +1144,192 @@ header img {
     opacity: 1;
   }
   46% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes run {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  34% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  36% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  39% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  41% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  46% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  47% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    right: 30%;
+  }
+  53% {
+    right: -10%;
+  }
+  100% {
+    right: -10%;
+  }
+}
+
+@keyframes run {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  34% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  36% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  39% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  41% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  46% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  47% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    right: 30%;
+  }
+  53% {
+    right: -10%;
+  }
+  100% {
+    right: -10%;
+  }
+}
+
+@-webkit-keyframes run-1 {
+  0% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  53.01% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes run-1 {
+  0% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  53.01% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  90% {
     opacity: 0;
   }
   100% {
