@@ -450,6 +450,17 @@ header img {
   opacity: 1;
 }
 
+.header__img--55 {
+  -webkit-animation: run-5 30s linear infinite;
+          animation: run-5 30s linear infinite;
+  position: absolute;
+  top: 15%;
+  right: 35%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 0;
+}
+
 @-webkit-keyframes rotate-1 {
   0%, 100% {
     left: -10%;
@@ -1481,6 +1492,52 @@ header img {
     opacity: 1;
   }
   56% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes run-5 {
+  0% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 0;
+    right: 35%;
+  }
+  48.5% {
+    opacity: 0.8;
+  }
+  49% {
+    opacity: 0.8;
+    right: 37%;
+  }
+  49.1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes run-5 {
+  0% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 0;
+    right: 35%;
+  }
+  48.5% {
+    opacity: 0.8;
+  }
+  49% {
+    opacity: 0.8;
+    right: 37%;
+  }
+  49.1% {
     opacity: 0;
   }
   100% {
