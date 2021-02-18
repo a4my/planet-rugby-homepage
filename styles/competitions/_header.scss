@@ -193,6 +193,25 @@
         transform: rotateY(180deg);
         opacity: 0;
       }
+
+      &--61 {
+        animation: harlequin1 45s linear infinite;
+        position: absolute;
+        bottom: 0%;
+        right: 30%;
+        opacity: 1;
+      }
+
+      &--62 {
+        animation: harlequin2 45s linear infinite;
+        position: absolute;
+        bottom: -11.3%;
+        right: 25.85%;
+        height: 218px;
+        width: auto;
+        opacity: 0;
+      }
+
   }
 }
 
@@ -368,8 +387,25 @@
 @keyframes run-5 {
   0% {opacity: 0;}
   47% {opacity: 0; right: 35%}
-  48.5% {opacity: 0.8;}
-  49% {opacity: 0.8; right: 37%;}
+  48.5% {opacity: 0.4;}
+  49% {opacity: 0.4; right: 37%;}
   49.1% {opacity: 0;}
   100% {opacity: 0;}
+}
+
+@keyframes harlequin1 {
+  0% {opacity: 0;}
+  5% {opacity: 1; transform: rotateY(360deg);}
+  10% {transform: rotateY(0deg);}
+
+}
+
+@keyframes harlequin2 {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  11% {opacity: 1;}
+  13% {opacity: 1;}
+  14% {opacity: 0;}
+  15% {opacity: 1;}
+  16% {opacity: 0;}
 }
