@@ -270,28 +270,26 @@
         transform: rotateX(180deg) rotate(60deg);
         z-index: 0;
       }
+
+      &--11 {
+        animation: leaf-4 10s linear infinite;
+        position: absolute;
+        height: 125px;
+        bottom: -7.5%;
+        left: 20%;
+      }
   }
 }
 
 
 // ANIMATIONS
 
-@keyframes leaf-1 {
-  0% {top: 13%; left: -10%;}  
-  75% {top: -20%; left: 40%;}
-  100% {top: -20%; left: 9%;}
-}
-
-@keyframes leaf-2 {
-  0% {top: 10%; left: -15%;}  
-  75% {top: -20%; left: 40%;}
-  100% {top: -20%; left: 9%;}
-}
-
-@keyframes leaf-3 {
-  0% {top: 25%; left: -17%;}  
-  75% {top: -20%; left: 40%;}
-  100% {top: -20%; left: 9%;}
+@keyframes leaf-4 {
+  0% {transform: rotateY(0deg) rotateX(0deg);}
+  20% {transform: rotateY(30deg) rotateX(0deg);}
+  40% {transform: rotateY(30deg) rotateX(10deg);}
+  60% {transform: rotateY(-30deg) rotateX(0deg);}
+  80% {transform: rotateY(-30deg) rotateX(-10deg);}
 }
 
 @keyframes rotate-1 {
@@ -587,4 +585,22 @@
   78% {bottom: -10%; left: 57%;}
   79% {bottom: -20%; left: 57%;}
   100% {bottom: -20%; left: 20%;transform: rotate(5500deg);}
+}
+
+@keyframes leaf-1 {
+  0% {top: 13%; left: -10%;}  
+  75% {top: -20%; left: 40%;}
+  100% {top: -20%; left: 9%;}
+}
+
+@keyframes leaf-2 {
+  0% {top: 10%; left: -15%;}  
+  75% {top: -20%; left: 40%;}
+  100% {top: -20%; left: 9%;}
+}
+
+@keyframes leaf-3 {
+  0% {top: 25%; left: -17%;}  
+  75% {top: -20%; left: 40%;}
+  100% {top: -20%; left: 9%;}
 }
