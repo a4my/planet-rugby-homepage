@@ -220,6 +220,15 @@
         left: 47%;
         opacity: 1;
       }
+
+      &--8 {
+        animation: jump-3 20s linear infinite;
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+        opacity: 1;
+        transform: rotateY(-270deg);
+      }
       
 
   }
@@ -504,4 +513,12 @@
   49% {top: 13%; left: 48%;}
   50% {top: -15%; left: 30%;}
   100% {top: -15%; left: 30%;}
+}
+
+@keyframes jump-3 {
+  0% {transform: rotateY(-270deg);}
+  5% {transform: rotateY(-180deg);}
+  6% {transform: rotateY(-180deg);bottom: 0%; left: 10%;}
+  15% {bottom: 20%; left: -15%;}
+  100% {bottom: 20%; left: -15%;}
 }
