@@ -482,6 +482,13 @@ header img {
   z-index: 2;
 }
 
+.header__img--7 {
+  position: absolute;
+  top: 15%;
+  left: 47%;
+  opacity: 1;
+}
+
 @-webkit-keyframes rotate-1 {
   0%, 100% {
     left: -10%;
