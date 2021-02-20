@@ -214,7 +214,7 @@
       }
 
       &--7 {
-        // animation: harlequin1 45s linear infinite;
+        animation: flying 30s linear infinite;
         position: absolute;
         top: 15%;
         left: 47%;
@@ -227,6 +227,8 @@
 
 
 // ANIMATIONS
+
+
 
 @keyframes rotate-1 {
   0%, 100%{left:-10%; bottom: -20%; transform: rotate(45deg);}
@@ -482,4 +484,24 @@
   77% {bottom: -10;opacity: 0;}
 
   100% {bottom: -10;opacity: 0;}
+}
+
+@keyframes flying {
+  0% {top: -15%; left: 60%;}
+  4% {top: -15%; left: 60%;}
+  12% {top: 15%; left: 50%;}
+  16% {top: 14%; left: 47%;}
+  20% {top: 13%; left: 46%;}
+  23% {top: 12%; left: 47%;}
+  26% {top: 13%; left: 48%;}
+  29% {top: 14%; left: 47%;}
+  32% {top: 13%; left: 46%;}
+  35% {top: 12%; left: 47%;}
+  38% {top: 13%; left: 48%;}
+  41% {top: 14%; left: 47%;}
+  44% {top: 13%; left: 46%;}
+  47% {top: 12%; left: 47%;}
+  49% {top: 13%; left: 48%;}
+  50% {top: -15%; left: 30%;}
+  100% {top: -15%; left: 30%;}
 }
