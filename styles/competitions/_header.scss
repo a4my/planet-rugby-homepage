@@ -214,7 +214,7 @@
       }
 
       &--7 {
-        animation: flying 30s linear infinite;
+        animation: flying-1 30s linear infinite;
         position: absolute;
         top: 15%;
         left: 47%;
@@ -230,6 +230,14 @@
         transform: rotateY(-270deg);
       }
       
+      &--9 {
+        animation: flying-2 20s linear infinite;
+        position: absolute;
+        bottom: 0%;
+        left: 20%;
+        height: 80px;
+        opacity: 1;
+      }
 
   }
 }
@@ -495,7 +503,7 @@
   100% {bottom: -10;opacity: 0;}
 }
 
-@keyframes flying {
+@keyframes flying-1 {
   0% {top: -15%; left: 60%;}
   4% {top: -15%; left: 60%;}
   12% {top: 15%; left: 50%;}
@@ -521,4 +529,15 @@
   6% {transform: rotateY(-180deg);bottom: 0%; left: 10%;}
   15% {bottom: 20%; left: -15%;}
   100% {bottom: 20%; left: -15%;}
+}
+
+@keyframes flying-2 {
+  0% {bottom: -20%;}
+  52% {bottom: -20%;}
+  65% {bottom: 38%; left: 44%;}
+  68% {bottom: 43%; left: 46%;}
+  75% {bottom: 10%; left: 53%;}
+  78% {bottom: -10%; left: 57%;}
+  79% {bottom: -20%; left: 57%;}
+  100% {bottom: -20%; left: 20%;transform: rotate(5500deg);}
 }
