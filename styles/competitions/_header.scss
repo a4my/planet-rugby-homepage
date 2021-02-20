@@ -114,6 +114,8 @@
         bottom: -10%;
         right: 10%;
         z-index: 0;
+        height: 90px;
+        width: auto;
       }
 
       &--4 {
@@ -218,7 +220,8 @@
         position: absolute;
         top: 15%;
         left: 47%;
-        opacity: 1;
+        height: 80px;
+        width: auto;
       }
 
       &--8 {
@@ -256,8 +259,8 @@
         top: 10%;
         left: 5%;
         height: 70px;
-        opacity: 1;
         z-index: 0;
+        transform: rotate(10deg);
       }
 
       &--102 {
@@ -272,25 +275,155 @@
       }
 
       &--11 {
-        animation: leaf-4 10s linear infinite;
+        animation: leaf-4 20s linear infinite;
         position: absolute;
-        height: 125px;
-        bottom: -7.5%;
+        bottom: -7%;
         left: 20%;
+        height: 120px;
+      }
+
+      &--12 {
+        animation: impact-1 30s linear infinite;
+        position: absolute;
+        height: 90px;
+        top: 7%;
+        right: 13%;
+      }
+
+      &--13 {
+        animation: impact-2 30s linear infinite;
+        position: absolute;
+        height: 90px;
+        top: 17%;
+        right: 9%;
+      }
+
+      &--lightning1 {
+        animation: lightning-1 30s linear infinite;
+        position: absolute;
+        height: 90px;
+        top: 8%;
+        right: 11%;
+        height: 150px;
+        transform: rotate(90deg);
+      }
+
+      &--14 {
+        animation: impact-3 30s linear infinite;
+        position: absolute;
+        height: 90px;
+        top: 7%;
+        right: 13%;
+        // transform: rotate(-30deg); /* to remove*/
+      }
+
+      &--15 {
+        animation: impact-4 30s linear infinite;
+        position: absolute;
+        height: 75px;
+        width: auto;
+        top: 17%;
+        right: 16%;
+        // transform: rotate(30deg); 
+      }
+
+      &--spark7 {
+        height: 10px;
+        width: auto;
+        opacity: 0;
+        position: absolute;
+        top: 14%;
+        right: 18%;
+        transform: rotate(90deg);
+        animation: spark-7 30s linear infinite;
+      }
+
+      &--spark8 {
+        height: 10px;
+        width: auto;
+        opacity: 0;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+        transform: rotate(90deg);
+        animation: spark-8 30s linear infinite;
+      }
+
+      &--spark9 {
+        height: 10px;
+        width: auto;
+        // opacity: 0;
+        position: absolute;
+        top: 25%;
+        right: 15%;
+        transform: rotate(-85deg);
+        // animation: spark-9 30s linear infinite;
+      }
+
+      &--spark10 {
+        height: 10px;
+        width: auto;
+        // opacity: 0;
+        position: absolute;
+        top: 27%;
+        right: 14%;
+        transform: rotate(-85deg);
+        // animation: spark-10 30s linear infinite;
+      }
+
+      &--spark11 {
+        height: 10px;
+        width: auto;
+        // opacity: 0;
+        position: absolute;
+        top: 22%;
+        right: 15%;
+        transform: rotate(-85deg);
+        // animation: spark-11 30s linear infinite;
+      }
+
+      &--spark12 {
+        height: 10px;
+        width: auto;
+        opacity: 0;
+        position: absolute;
+        top: 9%;
+        right: 18%;
+        transform: rotate(60deg);
+        animation: spark-12 30s linear infinite;
       }
   }
 }
 
 
 // ANIMATIONS
-
-@keyframes leaf-4 {
-  0% {transform: rotateY(0deg) rotateX(0deg);}
-  20% {transform: rotateY(30deg) rotateX(0deg);}
-  40% {transform: rotateY(30deg) rotateX(10deg);}
-  60% {transform: rotateY(-30deg) rotateX(0deg);}
-  80% {transform: rotateY(-30deg) rotateX(-10deg);}
+@keyframes spark-7 {
+  0% {top:14%; right: 18%; opacity: 0;}
+  65% {top:14%; right: 18%; opacity: 0;}
+  65.5% {top:12%; right: 19%; opacity: 1;}
+  66% {top:12%; right: 19%; opacity: 1;}
+  66.5% {top:12%; right: 19%; opacity: 0;}
+  100% {top:12%; right: 19%; opacity: 0;}
 }
+
+@keyframes spark-8 {
+  0% {top:10%; right: 20%; opacity: 0;}
+  65% {top:10%; right: 20%; opacity: 0;}
+  65.5% {top:8%; right: 21%; opacity: 1;}
+  66% {top:8%; right: 21%; opacity: 1;}
+  66.5% {top:8%; right: 21%; opacity: 0;}
+  100% {top:8%; right: 21%; opacity: 0;}
+}
+
+@keyframes spark-12 {
+  0% {top:9%; right: 18%; opacity: 0;}
+  65% {top:9%; right: 18%; opacity: 0;}
+  65.5% {top:6%; right: 18%; opacity: 1;}
+  66% {top:6%; right: 18%; opacity: 1;}
+  66.5% {top:6%; right: 18%; opacity: 0;}
+  100% {top:6%; right: 18%; opacity: 0;}
+}
+
 
 @keyframes rotate-1 {
   0%, 100%{left:-10%; bottom: -20%; transform: rotate(45deg);}
@@ -354,21 +487,21 @@
 
   0% {right: 10%; bottom: -20%;}
   5% {right: 10%; bottom: -20%;}
-  10% {right: 10%; bottom: -14%;}
-  19% {right: 10%; bottom: -14%;}
+  10% {right: 10%; bottom: -13%;}
+  19% {right: 10%; bottom: -13%;}
   20% {right: 10%; bottom: -20%;}
   30% {right: 10%; bottom: -20%;}
-  33% {right: 10%; bottom: 1%;}
-  35% { right: 10%; bottom: -3%;}
+  33% {right: 10%; bottom: 6%;}
+  35% { right: 10%; bottom: 0%;}
   50% {transform: scale(1);}
   53% {transform: scale(1.05);}
   56% {transform: scale(1);}
 
-  72% { right: 10%; bottom: -3%;}
-  74% {right: 6%; bottom: 1%}
-  76% {right: 2%; bottom: -3%}
-  97% {right: 2%; bottom: -3%}
-  100% { right: -2%; bottom: 1%}
+  72% { right: 10%; bottom:0%;}
+  74% {right: 6%; bottom: 8%}
+  76% {right: 2%; bottom: 0%}
+  97% {right: 2%; bottom: 0%}
+  100% { right: -2%; bottom: 10%}
 
 }
 
@@ -589,8 +722,9 @@
 
 @keyframes leaf-1 {
   0% {top: 13%; left: -10%;}  
-  75% {top: -20%; left: 40%;}
-  100% {top: -20%; left: 9%;}
+  25% {top: 13%; left: -10%;}  
+  100% {top: -20%; left: 40%;}
+  // 100% {top: -20%; left: 9%;}
 }
 
 @keyframes leaf-2 {
@@ -601,6 +735,55 @@
 
 @keyframes leaf-3 {
   0% {top: 25%; left: -17%;}  
-  75% {top: -20%; left: 40%;}
-  100% {top: -20%; left: 9%;}
+  35% {top: 25%; left: -17%;}  
+  100% {top: -20%; left: 40%;}
+  // 100% {top: -20%; left: 9%;}
+}
+
+@keyframes leaf-4 {
+  0% {transform: rotateY(0deg) rotateX(0deg);}
+  20% {transform: rotateY(40deg) rotateX(0deg);}
+  40% {transform: rotateY(40deg) rotateX(10deg);}
+  60% {transform: rotateY(-30deg) rotateX(0deg);}
+  80% {transform: rotateY(-30deg) rotateX(-10deg);}
+  100% {transform: rotateY(0deg) rotateX(0deg);}
+}
+
+@keyframes lightning-1 {
+  0% {opacity: 0;}
+  19.8% {opacity: 0;}
+  20% {opacity: 1;}
+  20.4% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes impact-1 {
+  0% {top: -15%; right: 26%; transform: rotate(0deg) rotateY(-80deg);}
+  20% {top: 7%; right: 13%; transform: rotate(40deg) rotateY(0deg);}
+  30% {top: -20%; right: 8%; transform: rotate(80deg) rotateY(80deg);}
+  100% {top: -20%; right: 18%;}
+}
+
+@keyframes impact-2 {
+  0% {top: 35%; right: -15%; transform: rotate(0deg);}
+  20% {top: 17%; right: 9%; transform: rotate(-40deg);}
+  21% {transform: rotate(-55deg);}
+  50% {top: 100%; right: 16%; transform: rotate(-240deg) rotateY(-80deg); }
+  100% {top: 100%; right: 18%;}
+}
+
+@keyframes impact-3 {
+  0% {top: -17%; right: 3%;}
+  55% {top: -17%; right: 3%;}
+  65% {top: 7%; right: 13%; transform: rotate(-30deg);}
+  70% {top: -20%; right: 15%; transform: rotateY(-120deg);}
+  100% {top: -20%; right: 18%;}
+}
+
+@keyframes impact-4 {
+  0% {top: 34%; right: 34%; opacity: 0;}
+  55% {top: 34%; right: 34%; opacity: 0;}
+  65% {top: 17%; right: 16%; transform: rotate(30deg); opacity: 1;}
+  75% {top: -20%; right: 35%; transform: rotate(-30deg) rotateY(-180deg);opacity: 1;}
+  100% {top: -20%; right: 18%;opacity: 1;}
 }
