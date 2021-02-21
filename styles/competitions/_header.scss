@@ -458,11 +458,45 @@
         transform: rotate(-50deg);
         animation: spark-16 30s linear infinite;
       }
+
+      &--18 {
+        animation: kick-1 30s linear infinite;
+        position: absolute;
+        height: 50px;
+        width: auto;
+        bottom: 0%;
+        right: -15%;
+        transform: rotateY(90deg);
+      }
+
+      &--18 {
+        animation: kick-2 30s linear infinite;
+        position: absolute;
+        height: 50px;
+        width: auto;
+        bottom: -20%;
+        right: 70%;
+        // transform: rotateY(90deg);
+      }
   }
 }
 
 // ANIMATIONS
 
+@keyframes kick-1 {
+  0% {bottom: 0%; right: -15%;}
+  75% {bottom: 0%; right: -15%;}
+  76% {bottom: 0%; right: -15%; transform: rotate(0deg)}
+  100% {bottom: 110%; right: 50%; transform: rotate(-2000deg);}
+}
+
+@keyframes kick-2 {
+  0% {bottom: -20; right: 70%;}
+  1% {bottom: -20; right: 70%;}
+  2% {bottom: -20; right: 70%; transform: rotate(0deg)}
+  20% {bottom: 110%; right: 50%; transform: rotate(2000deg);}
+  100% {bottom: 110%; right: 50%; transform: rotate(2000deg);}
+}
 
 @keyframes rotate-1 {
   0%, 100%{left:-10%; bottom: -20%; transform: rotate(45deg);}
@@ -826,7 +860,6 @@
   75% {top: -20%; right: 35%; transform: rotate(-30deg) rotateY(-180deg);opacity: 1;}
   100% {top: -20%; right: 18%;opacity: 1;}
 }
-
 
 @keyframes spark-7 {
   0% {top:14%; right: 18%; opacity: 0;}
