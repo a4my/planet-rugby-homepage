@@ -383,12 +383,13 @@
       }
 
       &--16 {
-        // animation: impact-5 30s linear infinite;
+        animation: impact-5 30s linear infinite;
         position: absolute;
         height: 100px;
         width: auto;
         top: 25%;
         left: 44.2%;
+        opacity: 0;
         transform: rotate(30deg); 
       }
 
@@ -407,9 +408,9 @@
         width: auto;
         // opacity: 0;
         position: absolute;
-        top: 21%;
-        left: 40%;
-        // transform: rotate(-85deg);
+        top: 23%;
+        left: 48%;
+        transform: rotate(130deg);
         // animation: spark-11 30s linear infinite;
       }
 
@@ -418,9 +419,9 @@
         width: auto;
         // opacity: 0;
         position: absolute;
-        top: 20%;
-        left: 46%;
-        // transform: rotate(-85deg);
+        top: 26%;
+        left: 48.5%;
+        transform: rotate(130deg);
         // animation: spark-11 30s linear infinite;
       }
 
@@ -429,9 +430,9 @@
         width: auto;
         // opacity: 0;
         position: absolute;
-        top: 25%;
-        left: 46%;
-        // transform: rotate(-85deg);
+        top: 34%;
+        left: 48.5%;
+        transform: rotate(-50deg);
         // animation: spark-11 30s linear infinite;
       }
 
@@ -440,9 +441,9 @@
         width: auto;
         // opacity: 0;
         position: absolute;
-        top: 26%;
-        left: 45%;
-        // transform: rotate(-85deg);
+        top: 38%;
+        left: 48.5%;
+        transform: rotate(-50deg);
         // animation: spark-11 30s linear infinite;
       }
 
@@ -451,17 +452,25 @@
         width: auto;
         // opacity: 0;
         position: absolute;
-        top: 27%;
-        left: 45%;
-        transform: rotate(50deg);
+        top: 39%;
+        left: 49%;
+        transform: rotate(-50deg);
         // animation: spark-11 30s linear infinite;
       }
   }
 }
 
-
 // ANIMATIONS
 
+@keyframes impact-5 {
+  0% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
+  10% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
+  15% {top: 25%; left: 44.2%; transform: rotate(30deg); opacity: 1;}
+  18% {top: 36%; left: 41.2%; transform: rotate(20deg); opacity: 1;}
+  // 20% {top: 25%; left: 40.6%; transform: rotate(25deg); opacity: 1;}
+  30% {top: 100%; left: 30.2%; transform: rotate(-65deg); opacity: 1;}
+  100% {top: 100%; left: 28.2%; transform: rotate(-25deg); opacity: 0;}
+}
 
 @keyframes rotate-1 {
   0%, 100%{left:-10%; bottom: -20%; transform: rotate(45deg);}
