@@ -394,83 +394,75 @@
       }
 
       &--17 {
-        // animation: impact-6 30s linear infinite;
+        animation: impact-6 30s linear infinite;
         position: absolute;
         height: 125px;
         width: auto;
         top: 24%;
         left: 46.5%;
+        opacity: 0;
         transform: rotate(-30deg); 
       }
 
       &--spark12 {
         height: 10px;
         width: auto;
-        // opacity: 0;
+        opacity: 0;
         position: absolute;
         top: 23%;
         left: 48%;
         transform: rotate(130deg);
-        // animation: spark-11 30s linear infinite;
+        animation: spark-12 30s linear infinite;
       }
 
       &--spark13 {
         height: 10px;
         width: auto;
-        // opacity: 0;
+        opacity: 0;
         position: absolute;
         top: 26%;
         left: 48.5%;
         transform: rotate(130deg);
-        // animation: spark-11 30s linear infinite;
+        animation: spark-13 30s linear infinite;
       }
 
       &--spark14 {
         height: 10px;
         width: auto;
-        // opacity: 0;
+        opacity: 0;
         position: absolute;
         top: 34%;
         left: 48.5%;
         transform: rotate(-50deg);
-        // animation: spark-11 30s linear infinite;
+        animation: spark-14 30s linear infinite;
       }
 
       &--spark15 {
         height: 10px;
         width: auto;
-        // opacity: 0;
+        opacity: 0;
         position: absolute;
         top: 38%;
         left: 48.5%;
         transform: rotate(-50deg);
-        // animation: spark-11 30s linear infinite;
+        animation: spark-15 30s linear infinite;
       }
 
       &--spark16 {
         height: 10px;
         width: auto;
-        // opacity: 0;
+        opacity: 0;
         position: absolute;
         top: 39%;
         left: 49%;
         transform: rotate(-50deg);
-        // animation: spark-11 30s linear infinite;
+        animation: spark-16 30s linear infinite;
       }
   }
 }
 
 // ANIMATIONS
 
-@keyframes impact-5 {
-  0% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
-  10% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
-  15% {top: 25%; left: 44.2%; transform: rotate(30deg); opacity: 1;}
-  18% {top: 36%; left: 41.2%; transform: rotate(20deg); opacity: 1;}
-  // 20% {top: 25%; left: 40.6%; transform: rotate(25deg); opacity: 1;}
-  30% {top: 100%; left: 30.2%; transform: rotate(-65deg); opacity: 1;}
-  100% {top: 100%; left: 28.2%; transform: rotate(-25deg); opacity: 0;}
-}
 
 @keyframes rotate-1 {
   0%, 100%{left:-10%; bottom: -20%; transform: rotate(45deg);}
@@ -879,4 +871,69 @@
   // 66% {top:24%; right: 13%; opacity: 1;}
   66% {top:24%; right: 13%; opacity: 0;}
   100% {top:24%; right: 13%; opacity: 0;}
+}
+
+@keyframes impact-5 {
+  0% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
+  70% {top: 65%; left: 34.2%; transform: rotate(0deg); opacity: 0;}
+  75% {top: 24%; left: 44.2%; transform: rotate(30deg); opacity: 1;}
+  78% {top: 36%; left: 41.2%; transform: rotate(20deg); opacity: 1;}
+  // 20% {top: 25%; left: 40.6%; transform: rotate(25deg); opacity: 1;}
+  90% {top: 100%; left: 30.2%; transform: rotate(-65deg); opacity: 1;}
+  100% {top: 100%; left: 28.2%; transform: rotate(-25deg); opacity: 0;}
+}
+
+@keyframes impact-6 {
+  0% {top: 25%; left: 56.2%; transform: rotate(0deg); opacity: 0;}
+  70% {top: 25%; left: 56.2%; transform: rotate(0deg); opacity: 0;}
+  75% {top: 25%; left: 46.2%; transform: rotate(-30deg); opacity: 1;}
+  78% {top: 36%; left: 49.2%; transform: rotate(-20deg); opacity: 1;}
+  // 20% {top: 25%; left: 40.6%; transform: rotate(25deg); opacity: 1;}
+  90% {top: 100%; left: 60.2%; transform: rotate(65deg); opacity: 1;}
+  100% {top: 100%; left: 60.2%; transform: rotate(25deg); opacity: 0;}
+}
+
+@keyframes spark-12 {
+  0% {top:25%; left: 48%;opacity: 0;}
+  75% {top:30%; left: 48%;opacity: 0;}
+  75.5% {top:25%; left: 48%;opacity: 1;}
+  76% {top:19%; left: 47.5%;opacity: 0;}
+  76.5% {top:19%; left: 47.5%;opacity: 0;}
+  100% {top:20%; left: 48%;opacity: 0;}
+}
+
+@keyframes spark-13 {
+  0% {top:28%; left: 48.5%;opacity: 0;}
+  75% {top:35%; left: 48.5%;opacity: 0;}
+  75.5% {top:28%; left: 48.5%;opacity: 1;}
+  76% {top:22%; left: 49%;opacity: 0;}
+  76.5% {top:22%; left: 49%;opacity: 0;}
+  100% {top:20%; left: 48.5%;opacity: 0;}
+}
+
+@keyframes spark-14 {
+  0% {top:32%; left: 48.5%;opacity: 0;}
+  75% {top:32%; left: 48.5%;opacity: 0;}
+  75.5% {top:34%; left: 48.5%;opacity: 1;}
+  76% {top:40%; left: 48.5%;opacity: 0;}
+  76.5% {top:40%; left: 48.5%;opacity: 0;}
+  100% {top:40%; left: 48.5%;opacity: 0;}
+}
+
+@keyframes spark-15 {
+  0% {top:32%; left: 48.5%;opacity: 0;}
+  75% {top:32%; left: 48.5%;opacity: 0;}
+  75.5% {top:38%; left: 48.5%;opacity: 1;}
+  76% {top:46%; left: 48.5%;opacity: 0;}
+  76.5% {top:46%; left: 48.5%;opacity: 0;}
+  100% {top:46%; left: 48.5%;opacity: 0;}
+}
+
+@keyframes spark-16 {
+  0% {top:32%; left: 48.5%;opacity: 0;}
+  75% {top:32%; left: 48.5%;opacity: 0;}
+  75.5% {top:39%; left: 49%;opacity: 1;}
+  76% {top:46%; left: 49.5%;opacity: 0;}
+  76.5% {top:46%; left: 49.5%;opacity: 0;}
+  100% {top:46%; left: 49.5%;opacity: 0;}
 }
