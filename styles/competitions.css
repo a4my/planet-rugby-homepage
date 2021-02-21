@@ -789,6 +789,28 @@ header img {
   right: 70%;
 }
 
+.header__img--20 {
+  -webkit-animation: kick-3 20s linear infinite;
+          animation: kick-3 20s linear infinite;
+  position: absolute;
+  height: 45px;
+  width: auto;
+  bottom: -20%;
+  left: -10%;
+}
+
+.header__img--21 {
+  -webkit-animation: kick-4 30s linear infinite;
+          animation: kick-4 30s linear infinite;
+  position: absolute;
+  height: 45px;
+  width: auto;
+  bottom: -20%;
+  right: 15%;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
 @-webkit-keyframes kick-1 {
   0% {
     bottom: 0%;
@@ -890,6 +912,98 @@ header img {
     right: 50%;
     -webkit-transform: rotate(2000deg);
             transform: rotate(2000deg);
+  }
+}
+
+@-webkit-keyframes kick-3 {
+  0% {
+    bottom: -10%;
+    left: -10%;
+  }
+  81% {
+    bottom: -10%;
+    left: -10%;
+  }
+  82% {
+    bottom: -10%;
+    left: -10%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    bottom: 110%;
+    left: 50%;
+    -webkit-transform: rotate(2000deg);
+            transform: rotate(2000deg);
+  }
+}
+
+@keyframes kick-3 {
+  0% {
+    bottom: -10%;
+    left: -10%;
+  }
+  81% {
+    bottom: -10%;
+    left: -10%;
+  }
+  82% {
+    bottom: -10%;
+    left: -10%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    bottom: 110%;
+    left: 50%;
+    -webkit-transform: rotate(2000deg);
+            transform: rotate(2000deg);
+  }
+}
+
+@-webkit-keyframes kick-4 {
+  0% {
+    bottom: -10%;
+    right: -10%;
+  }
+  81% {
+    bottom: -10%;
+    right: -10%;
+  }
+  82% {
+    bottom: -10%;
+    right: -10%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    bottom: 110%;
+    right: 50%;
+    -webkit-transform: rotate(-2000deg);
+            transform: rotate(-2000deg);
+  }
+}
+
+@keyframes kick-4 {
+  0% {
+    bottom: -10%;
+    right: -10%;
+  }
+  81% {
+    bottom: -10%;
+    right: -10%;
+  }
+  82% {
+    bottom: -10%;
+    right: -10%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    bottom: 110%;
+    right: 50%;
+    -webkit-transform: rotate(-2000deg);
+            transform: rotate(-2000deg);
   }
 }
 

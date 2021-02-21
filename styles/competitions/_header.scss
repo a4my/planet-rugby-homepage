@@ -478,6 +478,26 @@
         right: 70%;
         // transform: rotateY(90deg);
       }
+
+      &--20 {
+        animation: kick-3 20s linear infinite;
+        position: absolute;
+        height: 45px;
+        width: auto;
+        bottom: -20%;
+        left: -10%;
+        // transform: rotateY(90deg);
+      }
+
+      &--21 {
+        animation: kick-4 30s linear infinite;
+        position: absolute;
+        height: 45px;
+        width: auto;
+        bottom: -20%;
+        right: 15%;
+        transform: rotateY(90deg);
+      }
   }
 }
 
@@ -496,6 +516,21 @@
   2% {bottom: -20; right: 70%; transform: rotate(0deg)}
   20% {bottom: 110%; right: 50%; transform: rotate(2000deg);}
   100% {bottom: 110%; right: 50%; transform: rotate(2000deg);}
+}
+
+@keyframes kick-3 {
+  0% {bottom: -10%; left: -10%;}
+  81% {bottom: -10%; left: -10%;}
+  82% {bottom: -10%; left: -10%; transform: rotate(0deg)}
+  100% {bottom: 110%; left: 50%; transform: rotate(2000deg);}
+  // 100% {bottom: 110%; left: 50%; transform: rotate(2000deg);}
+}
+
+@keyframes kick-4 {
+  0% {bottom: -10%; right: -10%;}
+  81% {bottom: -10%; right: -10%;}
+  82% {bottom: -10%; right: -10%; transform: rotate(0deg)}
+  100% {bottom: 110%; right: 50%; transform: rotate(-2000deg);}
 }
 
 @keyframes rotate-1 {
