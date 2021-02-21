@@ -676,351 +676,66 @@ header img {
           animation: spark-11 30s linear infinite;
 }
 
-.header__img--spark12 {
-  height: 7px;
-  width: auto;
-  opacity: 0;
+.header__img--16 {
   position: absolute;
-  top: 9%;
-  right: 18%;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  height: 100px;
+  width: auto;
+  top: 25%;
+  left: 44.2%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
-@-webkit-keyframes spark-9 {
-  0% {
-    top: 25%;
-    right: 15%;
-    opacity: 0;
-  }
-  65% {
-    top: 25%;
-    right: 15%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 27%;
-    right: 13%;
-    opacity: 1;
-  }
-  66% {
-    top: 27%;
-    right: 13%;
-    opacity: 0;
-  }
-  100% {
-    top: 27%;
-    right: 13%;
-    opacity: 0;
-  }
+.header__img--17 {
+  position: absolute;
+  height: 125px;
+  width: auto;
+  top: 24%;
+  left: 46.5%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
-@keyframes spark-9 {
-  0% {
-    top: 25%;
-    right: 15%;
-    opacity: 0;
-  }
-  65% {
-    top: 25%;
-    right: 15%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 27%;
-    right: 13%;
-    opacity: 1;
-  }
-  66% {
-    top: 27%;
-    right: 13%;
-    opacity: 0;
-  }
-  100% {
-    top: 27%;
-    right: 13%;
-    opacity: 0;
-  }
+.header__img--spark12 {
+  height: 10px;
+  width: auto;
+  position: absolute;
+  top: 21%;
+  left: 40%;
 }
 
-@-webkit-keyframes spark-10 {
-  0% {
-    top: 27%;
-    right: 14%;
-    opacity: 0;
-  }
-  65% {
-    top: 27%;
-    right: 14%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 29%;
-    right: 12%;
-    opacity: 1;
-  }
-  66% {
-    top: 29%;
-    right: 12%;
-    opacity: 0;
-  }
-  100% {
-    top: 29%;
-    right: 12%;
-    opacity: 0;
-  }
+.header__img--spark13 {
+  height: 10px;
+  width: auto;
+  position: absolute;
+  top: 20%;
+  left: 46%;
 }
 
-@keyframes spark-10 {
-  0% {
-    top: 27%;
-    right: 14%;
-    opacity: 0;
-  }
-  65% {
-    top: 27%;
-    right: 14%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 29%;
-    right: 12%;
-    opacity: 1;
-  }
-  66% {
-    top: 29%;
-    right: 12%;
-    opacity: 0;
-  }
-  100% {
-    top: 29%;
-    right: 12%;
-    opacity: 0;
-  }
+.header__img--spark14 {
+  height: 10px;
+  width: auto;
+  position: absolute;
+  top: 25%;
+  left: 46%;
 }
 
-@-webkit-keyframes spark-11 {
-  0% {
-    top: 22%;
-    right: 15%;
-    opacity: 0;
-  }
-  65% {
-    top: 22%;
-    right: 15%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 24%;
-    right: 13%;
-    opacity: 1;
-  }
-  66% {
-    top: 24%;
-    right: 13%;
-    opacity: 0;
-  }
-  100% {
-    top: 24%;
-    right: 13%;
-    opacity: 0;
-  }
+.header__img--spark15 {
+  height: 10px;
+  width: auto;
+  position: absolute;
+  top: 26%;
+  left: 45%;
 }
 
-@keyframes spark-11 {
-  0% {
-    top: 22%;
-    right: 15%;
-    opacity: 0;
-  }
-  65% {
-    top: 22%;
-    right: 15%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 24%;
-    right: 13%;
-    opacity: 1;
-  }
-  66% {
-    top: 24%;
-    right: 13%;
-    opacity: 0;
-  }
-  100% {
-    top: 24%;
-    right: 13%;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes spark-7 {
-  0% {
-    top: 14%;
-    right: 18%;
-    opacity: 0;
-  }
-  65% {
-    top: 14%;
-    right: 18%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 10%;
-    right: 19%;
-    opacity: 1;
-  }
-  66% {
-    top: 10%;
-    right: 19%;
-    opacity: 0;
-  }
-  100% {
-    top: 10%;
-    right: 19%;
-    opacity: 0;
-  }
-}
-
-@keyframes spark-7 {
-  0% {
-    top: 14%;
-    right: 18%;
-    opacity: 0;
-  }
-  65% {
-    top: 14%;
-    right: 18%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 10%;
-    right: 19%;
-    opacity: 1;
-  }
-  66% {
-    top: 10%;
-    right: 19%;
-    opacity: 0;
-  }
-  100% {
-    top: 10%;
-    right: 19%;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes spark-8 {
-  0% {
-    top: 10%;
-    right: 20%;
-    opacity: 0;
-  }
-  65% {
-    top: 10%;
-    right: 20%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 7%;
-    right: 21%;
-    opacity: 1;
-  }
-  66% {
-    top: 7%;
-    right: 21%;
-    opacity: 0;
-  }
-  100% {
-    top: 7%;
-    right: 21%;
-    opacity: 0;
-  }
-}
-
-@keyframes spark-8 {
-  0% {
-    top: 10%;
-    right: 20%;
-    opacity: 0;
-  }
-  65% {
-    top: 10%;
-    right: 20%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 7%;
-    right: 21%;
-    opacity: 1;
-  }
-  66% {
-    top: 7%;
-    right: 21%;
-    opacity: 0;
-  }
-  100% {
-    top: 7%;
-    right: 21%;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes spark-12 {
-  0% {
-    top: 9%;
-    right: 18%;
-    opacity: 0;
-  }
-  65% {
-    top: 9%;
-    right: 18%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 5%;
-    right: 18%;
-    opacity: 1;
-  }
-  66% {
-    top: 6%;
-    right: 18%;
-    opacity: 0;
-  }
-  100% {
-    top: 6%;
-    right: 18%;
-    opacity: 0;
-  }
-}
-
-@keyframes spark-12 {
-  0% {
-    top: 9%;
-    right: 18%;
-    opacity: 0;
-  }
-  65% {
-    top: 9%;
-    right: 18%;
-    opacity: 0;
-  }
-  65.5% {
-    top: 5%;
-    right: 18%;
-    opacity: 1;
-  }
-  66% {
-    top: 6%;
-    right: 18%;
-    opacity: 0;
-  }
-  100% {
-    top: 6%;
-    right: 18%;
-    opacity: 0;
-  }
+.header__img--spark16 {
+  height: 10px;
+  width: auto;
+  position: absolute;
+  top: 27%;
+  left: 45%;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
 }
 
 @-webkit-keyframes rotate-1 {
@@ -3266,6 +2981,286 @@ header img {
     top: -20%;
     right: 18%;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes spark-7 {
+  0% {
+    top: 14%;
+    right: 18%;
+    opacity: 0;
+  }
+  65% {
+    top: 14%;
+    right: 18%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 10%;
+    right: 19%;
+    opacity: 1;
+  }
+  66% {
+    top: 10%;
+    right: 19%;
+    opacity: 0;
+  }
+  100% {
+    top: 10%;
+    right: 19%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-7 {
+  0% {
+    top: 14%;
+    right: 18%;
+    opacity: 0;
+  }
+  65% {
+    top: 14%;
+    right: 18%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 10%;
+    right: 19%;
+    opacity: 1;
+  }
+  66% {
+    top: 10%;
+    right: 19%;
+    opacity: 0;
+  }
+  100% {
+    top: 10%;
+    right: 19%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-8 {
+  0% {
+    top: 10%;
+    right: 20%;
+    opacity: 0;
+  }
+  65% {
+    top: 10%;
+    right: 20%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 7%;
+    right: 21%;
+    opacity: 1;
+  }
+  66% {
+    top: 7%;
+    right: 21%;
+    opacity: 0;
+  }
+  100% {
+    top: 7%;
+    right: 21%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-8 {
+  0% {
+    top: 10%;
+    right: 20%;
+    opacity: 0;
+  }
+  65% {
+    top: 10%;
+    right: 20%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 7%;
+    right: 21%;
+    opacity: 1;
+  }
+  66% {
+    top: 7%;
+    right: 21%;
+    opacity: 0;
+  }
+  100% {
+    top: 7%;
+    right: 21%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-9 {
+  0% {
+    top: 25%;
+    right: 15%;
+    opacity: 0;
+  }
+  65% {
+    top: 25%;
+    right: 15%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 27%;
+    right: 13%;
+    opacity: 1;
+  }
+  66% {
+    top: 27%;
+    right: 13%;
+    opacity: 0;
+  }
+  100% {
+    top: 27%;
+    right: 13%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-9 {
+  0% {
+    top: 25%;
+    right: 15%;
+    opacity: 0;
+  }
+  65% {
+    top: 25%;
+    right: 15%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 27%;
+    right: 13%;
+    opacity: 1;
+  }
+  66% {
+    top: 27%;
+    right: 13%;
+    opacity: 0;
+  }
+  100% {
+    top: 27%;
+    right: 13%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-10 {
+  0% {
+    top: 27%;
+    right: 14%;
+    opacity: 0;
+  }
+  65% {
+    top: 27%;
+    right: 14%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 29%;
+    right: 12%;
+    opacity: 1;
+  }
+  66% {
+    top: 29%;
+    right: 12%;
+    opacity: 0;
+  }
+  100% {
+    top: 29%;
+    right: 12%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-10 {
+  0% {
+    top: 27%;
+    right: 14%;
+    opacity: 0;
+  }
+  65% {
+    top: 27%;
+    right: 14%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 29%;
+    right: 12%;
+    opacity: 1;
+  }
+  66% {
+    top: 29%;
+    right: 12%;
+    opacity: 0;
+  }
+  100% {
+    top: 29%;
+    right: 12%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spark-11 {
+  0% {
+    top: 22%;
+    right: 15%;
+    opacity: 0;
+  }
+  65% {
+    top: 22%;
+    right: 15%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 24%;
+    right: 13%;
+    opacity: 1;
+  }
+  66% {
+    top: 24%;
+    right: 13%;
+    opacity: 0;
+  }
+  100% {
+    top: 24%;
+    right: 13%;
+    opacity: 0;
+  }
+}
+
+@keyframes spark-11 {
+  0% {
+    top: 22%;
+    right: 15%;
+    opacity: 0;
+  }
+  65% {
+    top: 22%;
+    right: 15%;
+    opacity: 0;
+  }
+  65.5% {
+    top: 24%;
+    right: 13%;
+    opacity: 1;
+  }
+  66% {
+    top: 24%;
+    right: 13%;
+    opacity: 0;
+  }
+  100% {
+    top: 24%;
+    right: 13%;
+    opacity: 0;
   }
 }
 
