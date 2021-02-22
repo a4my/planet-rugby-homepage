@@ -4133,7 +4133,7 @@ header img {
 }
 
 .section-1 {
-  height: 2000px;
+  height: 1400px;
   background-color: #fff;
   z-index: 10000;
   position: relative;
@@ -4207,6 +4207,12 @@ header img {
 
 .section-1__table tr:hover {
   background-color: #0d8ef8;
+}
+
+.section-2 {
+  height: 2000px;
+  background-color: #06243c;
+  position: relative;
 }
 
 .footer {
