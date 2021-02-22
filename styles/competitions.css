@@ -4043,11 +4043,112 @@ header img {
   }
 }
 
+.horizontal-scrolling-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #06243c;
+  z-index: 1000;
+}
+
+.sample-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.sample-item p {
+  margin-top: 12px;
+  padding: 0px 5px;
+}
+
+.sample-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sample-item:hover {
+  color: #0d8ef8;
+  border: 2px solid #0d8ef8;
+}
+
+.sample-item:hover img {
+  border: 2px solid #0d8ef8;
+}
+
+.img-banner {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #fff;
+}
+
+#container {
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photobanner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: bannermove 40s linear infinite;
+          animation: bannermove 40s linear infinite;
+}
+
+@-webkit-keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
 .section-1 {
-  height: 60vh;
+  height: 2000px;
   background-color: #fff;
   z-index: 10000;
   position: relative;
+}
+
+.section-1__titlebox {
+  background-color: #06243c;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
 }
 
 .footer {
