@@ -4151,6 +4151,31 @@ header img {
   width: 350px;
 }
 
+.section-1__btns {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-1__tablink {
+  height: 100px;
+  width: auto;
+  border: none;
+  margin: 10px;
+}
+
+.section-1__logo {
+  height: 100px;
+  width: auto;
+  border: 3px solid #06243c;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-1__logo:hover {
+  border: 3px solid #0d8ef8;
+}
+
 .footer {
   height: 370px;
   background-color: #06243c;
