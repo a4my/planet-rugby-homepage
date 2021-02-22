@@ -4176,6 +4176,38 @@ header img {
   border: 3px solid #0d8ef8;
 }
 
+.section-1__table {
+  margin: 10px auto;
+  border: 3px solid #06243c;
+  width: 700px;
+  border-collapse: collapse;
+}
+
+.section-1__table__img {
+  height: 20px;
+  width: auto;
+}
+
+.section-1__table th {
+  padding: 12px 3px;
+  text-align: left;
+  background-color: #06243c;
+  color: #fff;
+}
+
+.section-1__table th, .section-1 td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.section-1__table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.section-1__table tr:hover {
+  background-color: #0d8ef8;
+}
+
 .footer {
   height: 370px;
   background-color: #06243c;

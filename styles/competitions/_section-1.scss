@@ -38,4 +38,43 @@
             border: 3px solid $primaryColor-light;
         }
     }
+
+    // &__table-container {
+    //     margin: 10px auto;
+    //     border: 3px solid $primaryColor;
+    //     width: 740px;
+    // }
+
+    &__table {
+        margin: 10px auto;
+        border: 3px solid $primaryColor;
+        width: 700px;
+        border-collapse: collapse;
+
+        &__img {
+            height: 20px;
+            width: auto;
+        }
+    }
+
+    &__table th {
+        padding: 12px 3px;
+        text-align: left;
+        background-color: $primaryColor;
+        color: $color-white;
+    }
+
+    &__table th, td {
+        border: 1px solid #ddd;
+        padding: 12px
+    }
+    
+    &__table tr:nth-child(even){ 
+        background-color: #f2f2f2;
+    }
+
+    &__table tr:hover{ 
+        background-color: $primaryColor-light;
+    }
+
 }
