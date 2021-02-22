@@ -4184,8 +4184,9 @@ header img {
 }
 
 .section-1__table__img {
-  height: 20px;
+  height: 30px;
   width: auto;
+  padding: 7px 5px 0px 5px;
 }
 
 .section-1__table th {
@@ -4197,7 +4198,7 @@ header img {
 
 .section-1__table th, .section-1 td {
   border: 1px solid #ddd;
-  padding: 12px;
+  padding: 15px;
 }
 
 .section-1__table tr:nth-child(even) {
