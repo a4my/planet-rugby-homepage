@@ -4135,7 +4135,6 @@ header img {
 .section-1 {
   height: 1400px;
   background-color: #fff;
-  z-index: 10000;
   position: relative;
 }
 
@@ -4186,7 +4185,42 @@ header img {
 .section-1__table__img {
   height: 30px;
   width: auto;
-  padding: 7px 5px 0px 5px;
+}
+
+.section-1__img-1 {
+  height: 200px;
+  width: auto;
+  opacity: 0.03;
+  position: absolute;
+  top: 27%;
+  left: 10%;
+}
+
+.section-1__img-2 {
+  height: 200px;
+  width: auto;
+  opacity: 0.03;
+  position: absolute;
+  top: 27%;
+  right: 10%;
+}
+
+.section-1__img-3 {
+  height: 200px;
+  width: auto;
+  opacity: 0.03;
+  position: absolute;
+  top: 67%;
+  left: 10%;
+}
+
+.section-1__img-4 {
+  height: 200px;
+  width: auto;
+  opacity: 0.03;
+  position: absolute;
+  top: 67%;
+  right: 10%;
 }
 
 .section-1__table th {
