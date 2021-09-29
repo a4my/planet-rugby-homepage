@@ -1,788 +1,1692 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="./images/logo-black.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/competitions.css">    
+    <link rel="icon" type="image/png" href="./images/logo-black.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/competitions.css" />
 
     <title>Planet Rugby - Competitions</title>
-</head>
-<body>
-
-      <!-- NAVBAR -->
-      <header>
-        <div class="logo-container">
-            <img class="navbar__logo rotate" src="./images/logo.png" alt="logo">
-        </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <nav class="navbar" >
-            <ul class="navbar__list" id="navbar">
-                <li class="navbar__item"><a class="navbar__link navbar__link" href="index.html">Home</a></li>
-                <li class="navbar__item"><a class="navbar__link navbar__link" href="news.html">News</a></li>
-                <li class="navbar__item"><a class="navbar__link navbar__link__active" href="competitions.html">Competitions</a></li>
-                <li class="navbar__item"><a class="navbar__link navbar__link" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="logo-container">
+        <img class="navbar__logo rotate" src="./images/logo.png" alt="logo" />
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav class="navbar">
+        <ul class="navbar__list" id="navbar">
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link" href="index.html">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link" href="news.html">News</a>
+          </li>
+          <li class="navbar__item">
+            <a
+              class="navbar__link navbar__link__active"
+              href="competitions.html"
+              >Competitions</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- HEADER -->
     <main class="header">
-        <div class="header__overlay"></div>
-        <ul>
-            <li><img src="./images/competitions/argentina.png" alt="" class="header__img header__img--1"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--1--spark1"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--1--spark2"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--1--spark3"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--1--spark4"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--1--spark5"></li>
-            <li><img src="./images/competitions/spark2.png" alt="" class="header__img header__img--1--spark6"></li>
-            <li><img src="./images/competitions/england.png" alt="" class="header__img header__img--2"></li>
-            <li><img src="./images/competitions/australia.png" alt="" class="header__img header__img--3"></li>
-            <li><img src="./images/competitions/france.png" alt="" class="header__img header__img--4"></li>
-            <li><img src="./images/competitions/triangle.png" alt="" class="header__img header__img--4--triangle1"></li>
-            <li><img src="./images/competitions/triangle.png" alt="" class="header__img header__img--4--triangle2"></li>
-            <li><img src="./images/competitions/munster.png" alt="" class="header__img header__img--5"></li>
-            <li><img src="./images/competitions/munster.png" alt="" class="header__img header__img--51"></li>
-            <li><img src="./images/competitions/munster.png" alt="" class="header__img header__img--52"></li>
-            <li><img src="./images/competitions/munster.png" alt="" class="header__img header__img--53"></li>
-            <li><img src="./images/competitions/munster.png" alt="" class="header__img header__img--54"></li>
-            <li><img src="./images/competitions/smoke.png" alt="" class="header__img header__img--55"></li>
-            <li><img src="./images/competitions/harlequins.png" alt="" class="header__img header__img--61"></li>
-            <li><img src="./images/competitions/harlequins2.png" alt="" class="header__img header__img--62"></li>
-            <li><img src="./images/competitions/wasp.png" alt="" class="header__img header__img--7"></li>
-            <li><img src="./images/competitions/southafrica.png" alt="" class="header__img header__img--8"></li>
-            <li><img src="./images/competitions/fiji.png" alt="" class="header__img header__img--9"></li>
-            <li><img src="./images/competitions/newzealand.png" alt="" class="header__img header__img--10"></li>
-            <li><img src="./images/competitions/newzealand.png" alt="" class="header__img header__img--101"></li>
-            <li><img src="./images/competitions/newzealand.png" alt="" class="header__img header__img--102"></li>
-            <li><img src="./images/competitions/ireland.png" alt="" class="header__img header__img--11"></li>
-            <li><img src="./images/competitions/bath.png" alt="" class="header__img header__img--12"></li>
-            <li><img src="./images/competitions/exeter.png" alt="" class="header__img header__img--13"></li>
-            <li><img src="./images/competitions/lightning.png" alt="" class="header__img header__img--lightning1"></li>
-            <li><img src="./images/competitions/canada.png" alt="" class="header__img header__img--14"></li>
-            <li><img src="./images/competitions/usa.png" alt="" class="header__img header__img--15"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark7"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark8"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark9"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark10"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark11"></li>
-            <li><img src="./images/competitions/toulouse.png" alt="" class="header__img header__img--16"></li>
-            <li><img src="./images/competitions/toulon.png" alt="" class="header__img header__img--17"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark12"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark13"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark14"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark15"></li>
-            <li><img src="./images/competitions/spark1.png" alt="" class="header__img header__img--spark16"></li>
-            <li><img src="./images/competitions/logo.png" alt="" class="header__img header__img--18"></li>
-            <li><img src="./images/competitions/logo.png" alt="" class="header__img header__img--19"></li>
-            <li><img src="./images/competitions/logo.png" alt="" class="header__img header__img--20"></li>
-            <li><img src="./images/competitions/logo.png" alt="" class="header__img header__img--21"></li>
+      <div class="header__overlay"></div>
+      <ul>
+        <li>
+          <img
+            src="./images/competitions/argentina.png"
+            alt=""
+            class="header__img header__img--1"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--1--spark1"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--1--spark2"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--1--spark3"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--1--spark4"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--1--spark5"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark2.png"
+            alt=""
+            class="header__img header__img--1--spark6"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/england.png"
+            alt=""
+            class="header__img header__img--2"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/australia.png"
+            alt=""
+            class="header__img header__img--3"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/france.png"
+            alt=""
+            class="header__img header__img--4"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/triangle.png"
+            alt=""
+            class="header__img header__img--4--triangle1"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/triangle.png"
+            alt=""
+            class="header__img header__img--4--triangle2"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/munster.png"
+            alt=""
+            class="header__img header__img--5"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/munster.png"
+            alt=""
+            class="header__img header__img--51"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/munster.png"
+            alt=""
+            class="header__img header__img--52"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/munster.png"
+            alt=""
+            class="header__img header__img--53"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/munster.png"
+            alt=""
+            class="header__img header__img--54"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/smoke.png"
+            alt=""
+            class="header__img header__img--55"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/harlequins.png"
+            alt=""
+            class="header__img header__img--61"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/harlequins2.png"
+            alt=""
+            class="header__img header__img--62"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/wasp.png"
+            alt=""
+            class="header__img header__img--7"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/southafrica.png"
+            alt=""
+            class="header__img header__img--8"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/fiji.png"
+            alt=""
+            class="header__img header__img--9"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/newzealand.png"
+            alt=""
+            class="header__img header__img--10"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/newzealand.png"
+            alt=""
+            class="header__img header__img--101"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/newzealand.png"
+            alt=""
+            class="header__img header__img--102"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/ireland.png"
+            alt=""
+            class="header__img header__img--11"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/bath.png"
+            alt=""
+            class="header__img header__img--12"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/exeter.png"
+            alt=""
+            class="header__img header__img--13"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/lightning.png"
+            alt=""
+            class="header__img header__img--lightning1"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/canada.png"
+            alt=""
+            class="header__img header__img--14"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/usa.png"
+            alt=""
+            class="header__img header__img--15"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark7"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark8"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark9"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark10"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark11"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/toulouse.png"
+            alt=""
+            class="header__img header__img--16"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/toulon.png"
+            alt=""
+            class="header__img header__img--17"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark12"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark13"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark14"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark15"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/spark1.png"
+            alt=""
+            class="header__img header__img--spark16"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/logo.png"
+            alt=""
+            class="header__img header__img--18"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/logo.png"
+            alt=""
+            class="header__img header__img--19"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/logo.png"
+            alt=""
+            class="header__img header__img--20"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/logo.png"
+            alt=""
+            class="header__img header__img--21"
+          />
+        </li>
 
-            <li><img src="./images/competitions/edinburgh.png" alt="" class="header__img "></li>
-            <li><img src="./images/competitions/stormers.png" alt="" class="header__img "></li>
-            <li><img src="./images/competitions/ireland.png" alt="" class="header__img "></li>
-            <li><img src="./images/competitions/blues.png" alt="" class="header__img "></li>
-        </ul>
+        <li>
+          <img
+            src="./images/competitions/edinburgh.png"
+            alt=""
+            class="header__img"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/stormers.png"
+            alt=""
+            class="header__img"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/ireland.png"
+            alt=""
+            class="header__img"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/competitions/blues.png"
+            alt=""
+            class="header__img"
+          />
+        </li>
+      </ul>
     </main>
 
     <!-- HORIZONTAL SCROLLING BANNER -->
     <section>
-        <div id="container">>
-            <div class="horizontal-scrolling-banner photobanner">
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-stade-toulousain.png" alt="logo">
-                    <p><a href="competitions.html">TOU 48-24 PAR</a></p>
-                    <img class="img-banner" src="./images/banner-stade-francais.jpg" alt="logo">
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-saracens.png" alt="logo">
-                    <p><a href="competitions.html">SAR 22-9 HAR</a></p>
-                    <img class="img-banner" src="./images/banner-bath.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-toulon.png" alt="logo">
-                    <p><a href="competitions.html">TOU 19-31 MON</a></p>
-                    <img class="img-banner" src="./images/banner-montpellier.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-france.png" alt="logo">
-                    <p><a href="competitions.html">FRA 29-17 ENG</a></p>
-                    <img class="img-banner" src="./images/banner-england.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-new-zealand.png" alt="logo">
-                    <p><a href="competitions.html">NZL 19-28 ARG</a></p>
-                    <img class="img-banner" src="./images/banner-argentina.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-northampton.png" alt="logo">
-                    <p><a href="competitions.html">NOR 7-38 EXE</a></p>
-                    <img class="img-banner" src="./images/banner-exeter.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-australia.png" alt="logo">
-                    <p><a href="competitions.html">AUS 16-16 RSA</a></p>
-                    <img class="img-banner" src="./images/banner-south-africa.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-wales.png" alt="logo">
-                    <p><a href="competitions.html">WAL 24-21 IRE</a></p>
-                    <img class="img-banner" src="./images/banner-ireland.png" alt="logo"> 
-                </div> 
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-stade-toulousain.png" alt="logo">
-                    <p><a href="competitions.html">TOU 48-24 PAR</a></p>
-                    <img class="img-banner" src="./images/banner-stade-francais.jpg" alt="logo">
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-saracens.png" alt="logo">
-                    <p><a href="competitions.html">SAR 22-9 HAR</a></p>
-                    <img class="img-banner" src="./images/banner-bath.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-toulon.png" alt="logo">
-                    <p><a href="competitions.html">TOU 19-31 MON</a></p>
-                    <img class="img-banner" src="./images/banner-montpellier.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-france.png" alt="logo">
-                    <p><a href="competitions.html">FRA 29-17 ENG</a></p>
-                    <img class="img-banner" src="./images/banner-england.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-new-zealand.png" alt="logo">
-                    <p><a href="competitions.html">NZL 19-28 ARG</a></p>
-                    <img class="img-banner" src="./images/banner-argentina.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-northampton.png" alt="logo">
-                    <p><a href="competitions.html">NOR 7-38 EXE</a></p>
-                    <img class="img-banner" src="./images/banner-exeter.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-australia.png" alt="logo">
-                    <p><a href="competitions.html">AUS 16-16 RSA</a></p>
-                    <img class="img-banner" src="./images/banner-south-africa.png" alt="logo"> 
-                </div>
-                <div class="sample-item">
-                    <img class="img-banner" src="./images/banner-wales.png" alt="logo">
-                    <p><a href="competitions.html">WAL 24-21 IRE</a></p>
-                    <img class="img-banner" src="./images/banner-ireland.png" alt="logo"> 
-                </div> 
-            </div>   
+      <div id="container">
+        >
+        <div class="horizontal-scrolling-banner photobanner">
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-stade-toulousain.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">TOU 48-24 PAR</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-stade-francais.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-saracens.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">SAR 22-9 HAR</a></p>
+            <img class="img-banner" src="./images/banner-bath.png" alt="logo" />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-toulon.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">TOU 19-31 MON</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-montpellier.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-france.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">FRA 29-17 ENG</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-england.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-new-zealand.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">NZL 19-28 ARG</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-argentina.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-northampton.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">NOR 7-38 EXE</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-exeter.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-australia.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">AUS 16-16 RSA</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-south-africa.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-wales.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">WAL 24-21 IRE</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-ireland.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-stade-toulousain.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">TOU 48-24 PAR</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-stade-francais.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-saracens.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">SAR 22-9 HAR</a></p>
+            <img class="img-banner" src="./images/banner-bath.png" alt="logo" />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-toulon.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">TOU 19-31 MON</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-montpellier.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-france.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">FRA 29-17 ENG</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-england.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-new-zealand.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">NZL 19-28 ARG</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-argentina.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-northampton.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">NOR 7-38 EXE</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-exeter.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-australia.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">AUS 16-16 RSA</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-south-africa.png"
+              alt="logo"
+            />
+          </div>
+          <div class="sample-item">
+            <img
+              class="img-banner"
+              src="./images/banner-wales.png"
+              alt="logo"
+            />
+            <p><a href="competitions.html">WAL 24-21 IRE</a></p>
+            <img
+              class="img-banner"
+              src="./images/banner-ireland.png"
+              alt="logo"
+            />
+          </div>
         </div>
+      </div>
     </section>
- 
+
     <!--  SECTION 1 -->
     <section class="section-1">
-        <div class="section-1__titlebox"  data-aos="fade-up" data-aos-once="true">
-            <h1 class="section-1__title">Competitions Standings</h1>
-        </div>
-        <div class="section-1__btns">
-            <button class="section-1__tablink" onclick="openCity('sixnations', this, 'hsl(207, 94%, 51%)')" data-aos="fade-right" data-aos-once="true">
-                <img class="section-1__logo" src="./images/competitions/6nations.jpg" alt="6 nations">
-            </button>
-            <button class="section-1__tablink" onclick="openCity('top', this, 'hsl(345, 91%, 29%)')" id="defaultOpen"  data-aos="fade-right" data-aos-once="true">
-                <img class="section-1__logo" src="./images/competitions/top14.jpg" alt="Top 14">
-            </button>
-            <button class="section-1__tablink" onclick="openCity('premier', this, 'hsl(150, 91%, 29%)')"  data-aos="fade-left" data-aos-once="true">
-                <img class="section-1__logo" src="./images/competitions/premiership.jpg" alt="Premiership">
-            </button>
-            <button class="section-1__tablink" onclick="openCity('superrugby', this, 'hsl(32, 94%, 54%)')"  data-aos="fade-left" data-aos-once="true">
-                <img class="section-1__logo" src="./images/competitions/superrugby.jpg" alt="Super Rugby">
-            </button>
-        </div>
+      <div class="section-1__titlebox" data-aos="fade-up" data-aos-once="true">
+        <h1 class="section-1__title">Competitions Standings</h1>
+      </div>
+      <div class="section-1__btns">
+        <button
+          class="section-1__tablink"
+          onclick="openCity('sixnations', this, 'hsl(207, 94%, 51%)')"
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
+          <img
+            class="section-1__logo"
+            src="./images/competitions/6nations.jpg"
+            alt="6 nations"
+          />
+        </button>
+        <button
+          class="section-1__tablink"
+          onclick="openCity('top', this, 'hsl(345, 91%, 29%)')"
+          id="defaultOpen"
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
+          <img
+            class="section-1__logo"
+            src="./images/competitions/top14.jpg"
+            alt="Top 14"
+          />
+        </button>
+        <button
+          class="section-1__tablink"
+          onclick="openCity('premier', this, 'hsl(150, 91%, 29%)')"
+          data-aos="fade-left"
+          data-aos-once="true"
+        >
+          <img
+            class="section-1__logo"
+            src="./images/competitions/premiership.jpg"
+            alt="Premiership"
+          />
+        </button>
+        <button
+          class="section-1__tablink"
+          onclick="openCity('superrugby', this, 'hsl(32, 94%, 54%)')"
+          data-aos="fade-left"
+          data-aos-once="true"
+        >
+          <img
+            class="section-1__logo"
+            src="./images/competitions/superrugby.jpg"
+            alt="Super Rugby"
+          />
+        </button>
+      </div>
 
-        <img class="section-1__img-1" src="./images/competitions/logo-black.png" alt="logo">
-        <img class="section-1__img-2" src="./images/competitions/logo-black.png" alt="logo">
-        <img class="section-1__img-3" src="./images/competitions/logo-black.png" alt="logo">
-        <img class="section-1__img-4" src="./images/competitions/logo-black.png" alt="logo">
+      <img
+        class="section-1__img-1"
+        src="./images/competitions/logo-black.png"
+        alt="logo"
+      />
+      <img
+        class="section-1__img-2"
+        src="./images/competitions/logo-black.png"
+        alt="logo"
+      />
+      <img
+        class="section-1__img-3"
+        src="./images/competitions/logo-black.png"
+        alt="logo"
+      />
+      <img
+        class="section-1__img-4"
+        src="./images/competitions/logo-black.png"
+        alt="logo"
+      />
 
-        <div id="sixnations" class="section-1__tabcontent">
-            <table class="section-1__table">
-                <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Pts</th>
-                    <th>P</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>Diff</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/france.png" alt="France"> France</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>+42</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/wales.png" alt="Wales"> Wales</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>+6</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/england.png" alt="England"> England</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>+18</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/scotland.png" alt="Scotland"> Scotland</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>+4</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/ireland.png" alt="Ireland"> Ireland</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>-7</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/italy.png" alt="Italy"> Italy</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>-63</td>
-                </tr>
-            </table>
-        </div>
-        <div id="top" class="section-1__tabcontent">
-            <table class="section-1__table">
-                <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Pts</th>
-                    <th>P</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>Diff</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/toulouse2.png" alt="Toulouse"> Stade Toulousain</td>
-                    <td>52</td>
-                    <td>15</td>
-                    <td>11</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>+183</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/larochelle.png" alt="La Rochelle"> Stade Rochelais</td>
-                    <td>50</td>
-                    <td>15</td>
-                    <td>11</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>+175</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/ubb.png" alt="UBB"> Union Bordeaux Bègles</td>
-                    <td>50</td>
-                    <td>16</td>
-                    <td>11</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>+92</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/racing.png" alt="R92"> Racing 92</td>
-                    <td>43</td>
-                    <td>16</td>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>+61</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/toulon2.png" alt="Toulon"> RC Toulon</td>
-                    <td>43</td>
-                    <td>15</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>+79</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/clermont.png" alt="ASM"> ASM Clermont</td>
-                    <td>45</td>
-                    <td>16</td>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>+126</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/lyon.png" alt="Lyon"> LOU Rugby</td>
-                    <td>39</td>
-                    <td>16</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>7</td>
-                    <td>+33</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/paris.png" alt="Paris"> Stade Francais</td>
-                    <td>39</td>
-                    <td>16</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td>+43</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/brive.png" alt="Brive"> CA Brive</td>
-                    <td>34</td>
-                    <td>16</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td>-88</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/castres.png" alt="Castres"> Castres Olympique</td>
-                    <td>30</td>
-                    <td>16</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>9</td>
-                    <td>-49</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/pau.png" alt="Pau"> Section Paloise</td>
-                    <td>33</td>
-                    <td>16</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>8</td>
-                    <td>-127</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/montpellier.png" alt="Montpellier"> Montpellier</td>
-                    <td>27</td>
-                    <td>16</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>12</td>
-                    <td>+9</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/bayonne.png" alt="Bayonne"> Aviron Bayonnais</td>
-                    <td>22</td>
-                    <td>14</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>9</td>
-                    <td>-155</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/agen.png" alt="SUA"> SU Agen</td>
-                    <td>2</td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>15</td>
-                    <td>-382</td>
-                </tr>
-            </table>
-        </div>
-        <div id="premier" class="section-1__tabcontent">
-            <table class="section-1__table">
-                <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Pts</th>
-                    <th>P</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>Diff</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/bristol.png" alt="Bristol"> Bristol Bears</td>
-                    <td>37</td>
-                    <td>10</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>+87</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/exeter.png" alt="Exeter"> Exeter Chiefs</td>
-                    <td>34</td>
-                    <td>10</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>+87</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/harlequins2.png" alt="harlequins"> Harlequins</td>
-                    <td>32</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>+62</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/northampton.png" alt="Saints"> Northampton Saints</td>
-                    <td>30</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/sale.png" alt="Sale"> Sale Sharks</td>
-                    <td>28</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>+22</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/newcastle.png" alt="Newcastle"> Newcastle Falcons</td>
-                    <td>25</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>+4</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/londonirish.png" alt="London"> London Irish</td>
-                    <td>25</td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>-4</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/leicester.png" alt="Leicester"> Leicester Tigers</td>
-                    <td>24</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>+6</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/wasp.png" alt="Wasp"> Wasps</td>
-                    <td>24</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>-35</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/bath.png" alt="Bath"> Bath Rugby</td>
-                    <td>20</td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>-92</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/worcester.png" alt="Worcester"> Worcester Warriors</td>
-                    <td>15</td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>7</td>
-                    <td>-83</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/gloucester.png" alt="Gloucester"> Gloucester Rugby</td>
-                    <td>11</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>9</td>
-                    <td>-54</td>
-                </tr>
-            </table>
-        </div>
-        <div id="superrugby" class="section-1__tabcontent">
-            <table class="section-1__table">
-                <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Pts</th>
-                    <th>P</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>Diff</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/sharks.png" alt="Sharks"> Sharks (SA)</td>
-                    <td>24</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>+60</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/brumbies.png" alt="Brumbies"> Brumbies (AUS)</td>
-                    <td>23</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>+93</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/crusaders.png" alt="Crusaders"> Crusaders (NZ)</td>
-                    <td>23</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>+84</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/blues.png" alt="Blues"> Blues (NZ)</td>
-                    <td>22</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+58</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/chiefs.png" alt="Chiefs"> Chiefs (NZ)</td>
-                    <td>19</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+66</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/jaguares.png" alt="Jaguares"> Jaguares (ARG)</td>
-                    <td>17</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>+34</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/hurricanes.png" alt="Hurricanes"> Hurricanes (NZ)</td>
-                    <td>17</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+33</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/stormers.png" alt="Stormers"> Stormers (SA)</td>
-                    <td>17</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+24</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/rebels.png" alt="Rebels"> Rebels (AUS)</td>
-                    <td>13</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>+6</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/reds.png" alt="Reds"> Reds (AUS)</td>
-                    <td>13</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>+43</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/highlanders.png" alt="Highlanders"> Highlanders (NZ)</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>+72</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/bulls.png" alt="Bulls"> Bulls (SA)</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>-37</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/lions.png" alt="Lions"> Lions (SA)</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>-91</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/waratahs.png" alt="Waratahs"> Waratahs (AUS)</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>-110</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td><img class="section-1__table__img" src="./images/competitions/sunwolves.png" alt="Sunwolves"> Sunwolves (JAP)</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>-191</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <!--  SECTION 2 -->
-    <section class="section-2">
-
+      <div id="sixnations" class="section-1__tabcontent">
+        <table class="section-1__table">
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Pts</th>
+            <th>P</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Diff</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/france.png"
+                alt="France"
+              />
+              France
+            </td>
+            <td>9</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>+42</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/wales.png"
+                alt="Wales"
+              />
+              Wales
+            </td>
+            <td>9</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>+6</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/england.png"
+                alt="England"
+              />
+              England
+            </td>
+            <td>6</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>+18</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/scotland.png"
+                alt="Scotland"
+              />
+              Scotland
+            </td>
+            <td>5</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>+4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/ireland.png"
+                alt="Ireland"
+              />
+              Ireland
+            </td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>-7</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/italy.png"
+                alt="Italy"
+              />
+              Italy
+            </td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>-63</td>
+          </tr>
+        </table>
+      </div>
+      <div id="top" class="section-1__tabcontent">
+        <table class="section-1__table">
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Pts</th>
+            <th>P</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Diff</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/toulouse2.png"
+                alt="Toulouse"
+              />
+              Stade Toulousain
+            </td>
+            <td>52</td>
+            <td>15</td>
+            <td>11</td>
+            <td>1</td>
+            <td>3</td>
+            <td>+183</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/larochelle.png"
+                alt="La Rochelle"
+              />
+              Stade Rochelais
+            </td>
+            <td>50</td>
+            <td>15</td>
+            <td>11</td>
+            <td>0</td>
+            <td>4</td>
+            <td>+175</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/ubb.png"
+                alt="UBB"
+              />
+              Union Bordeaux Bègles
+            </td>
+            <td>50</td>
+            <td>16</td>
+            <td>11</td>
+            <td>0</td>
+            <td>5</td>
+            <td>+92</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/racing.png"
+                alt="R92"
+              />
+              Racing 92
+            </td>
+            <td>43</td>
+            <td>16</td>
+            <td>9</td>
+            <td>1</td>
+            <td>6</td>
+            <td>+61</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/toulon2.png"
+                alt="Toulon"
+              />
+              RC Toulon
+            </td>
+            <td>43</td>
+            <td>15</td>
+            <td>9</td>
+            <td>0</td>
+            <td>6</td>
+            <td>+79</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/clermont.png"
+                alt="ASM"
+              />
+              ASM Clermont
+            </td>
+            <td>45</td>
+            <td>16</td>
+            <td>9</td>
+            <td>1</td>
+            <td>6</td>
+            <td>+126</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/lyon.png"
+                alt="Lyon"
+              />
+              LOU Rugby
+            </td>
+            <td>39</td>
+            <td>16</td>
+            <td>8</td>
+            <td>1</td>
+            <td>7</td>
+            <td>+33</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/paris.png"
+                alt="Paris"
+              />
+              Stade Francais
+            </td>
+            <td>39</td>
+            <td>16</td>
+            <td>8</td>
+            <td>0</td>
+            <td>8</td>
+            <td>+43</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/brive.png"
+                alt="Brive"
+              />
+              CA Brive
+            </td>
+            <td>34</td>
+            <td>16</td>
+            <td>8</td>
+            <td>0</td>
+            <td>8</td>
+            <td>-88</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/castres.png"
+                alt="Castres"
+              />
+              Castres Olympique
+            </td>
+            <td>30</td>
+            <td>16</td>
+            <td>6</td>
+            <td>1</td>
+            <td>9</td>
+            <td>-49</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/pau.png"
+                alt="Pau"
+              />
+              Section Paloise
+            </td>
+            <td>33</td>
+            <td>16</td>
+            <td>7</td>
+            <td>1</td>
+            <td>8</td>
+            <td>-127</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/montpellier.png"
+                alt="Montpellier"
+              />
+              Montpellier
+            </td>
+            <td>27</td>
+            <td>16</td>
+            <td>4</td>
+            <td>0</td>
+            <td>12</td>
+            <td>+9</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/bayonne.png"
+                alt="Bayonne"
+              />
+              Aviron Bayonnais
+            </td>
+            <td>22</td>
+            <td>14</td>
+            <td>5</td>
+            <td>0</td>
+            <td>9</td>
+            <td>-155</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/agen.png"
+                alt="SUA"
+              />
+              SU Agen
+            </td>
+            <td>2</td>
+            <td>15</td>
+            <td>0</td>
+            <td>0</td>
+            <td>15</td>
+            <td>-382</td>
+          </tr>
+        </table>
+      </div>
+      <div id="premier" class="section-1__tabcontent">
+        <table class="section-1__table">
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Pts</th>
+            <th>P</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Diff</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/bristol.png"
+                alt="Bristol"
+              />
+              Bristol Bears
+            </td>
+            <td>37</td>
+            <td>10</td>
+            <td>7</td>
+            <td>1</td>
+            <td>2</td>
+            <td>+87</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/exeter.png"
+                alt="Exeter"
+              />
+              Exeter Chiefs
+            </td>
+            <td>34</td>
+            <td>10</td>
+            <td>7</td>
+            <td>0</td>
+            <td>3</td>
+            <td>+87</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/harlequins2.png"
+                alt="harlequins"
+              />
+              Harlequins
+            </td>
+            <td>32</td>
+            <td>10</td>
+            <td>6</td>
+            <td>1</td>
+            <td>3</td>
+            <td>+62</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/northampton.png"
+                alt="Saints"
+              />
+              Northampton Saints
+            </td>
+            <td>30</td>
+            <td>10</td>
+            <td>6</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/sale.png"
+                alt="Sale"
+              />
+              Sale Sharks
+            </td>
+            <td>28</td>
+            <td>10</td>
+            <td>6</td>
+            <td>0</td>
+            <td>4</td>
+            <td>+22</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/newcastle.png"
+                alt="Newcastle"
+              />
+              Newcastle Falcons
+            </td>
+            <td>25</td>
+            <td>10</td>
+            <td>5</td>
+            <td>0</td>
+            <td>5</td>
+            <td>+4</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/londonirish.png"
+                alt="London"
+              />
+              London Irish
+            </td>
+            <td>25</td>
+            <td>10</td>
+            <td>3</td>
+            <td>2</td>
+            <td>5</td>
+            <td>-4</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/leicester.png"
+                alt="Leicester"
+              />
+              Leicester Tigers
+            </td>
+            <td>24</td>
+            <td>10</td>
+            <td>5</td>
+            <td>0</td>
+            <td>5</td>
+            <td>+6</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/wasp.png"
+                alt="Wasp"
+              />
+              Wasps
+            </td>
+            <td>24</td>
+            <td>10</td>
+            <td>5</td>
+            <td>0</td>
+            <td>5</td>
+            <td>-35</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/bath.png"
+                alt="Bath"
+              />
+              Bath Rugby
+            </td>
+            <td>20</td>
+            <td>10</td>
+            <td>4</td>
+            <td>0</td>
+            <td>6</td>
+            <td>-92</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/worcester.png"
+                alt="Worcester"
+              />
+              Worcester Warriors
+            </td>
+            <td>15</td>
+            <td>10</td>
+            <td>3</td>
+            <td>0</td>
+            <td>7</td>
+            <td>-83</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/gloucester.png"
+                alt="Gloucester"
+              />
+              Gloucester Rugby
+            </td>
+            <td>11</td>
+            <td>10</td>
+            <td>1</td>
+            <td>0</td>
+            <td>9</td>
+            <td>-54</td>
+          </tr>
+        </table>
+      </div>
+      <div id="superrugby" class="section-1__tabcontent">
+        <table class="section-1__table">
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Pts</th>
+            <th>P</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Diff</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/sharks.png"
+                alt="Sharks"
+              />
+              Sharks (SA)
+            </td>
+            <td>24</td>
+            <td>7</td>
+            <td>6</td>
+            <td>0</td>
+            <td>1</td>
+            <td>+60</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/brumbies.png"
+                alt="Brumbies"
+              />
+              Brumbies (AUS)
+            </td>
+            <td>23</td>
+            <td>6</td>
+            <td>5</td>
+            <td>0</td>
+            <td>1</td>
+            <td>+93</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/crusaders.png"
+                alt="Crusaders"
+              />
+              Crusaders (NZ)
+            </td>
+            <td>23</td>
+            <td>6</td>
+            <td>5</td>
+            <td>0</td>
+            <td>1</td>
+            <td>+84</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/blues.png"
+                alt="Blues"
+              />
+              Blues (NZ)
+            </td>
+            <td>22</td>
+            <td>7</td>
+            <td>5</td>
+            <td>0</td>
+            <td>2</td>
+            <td>+58</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/chiefs.png"
+                alt="Chiefs"
+              />
+              Chiefs (NZ)
+            </td>
+            <td>19</td>
+            <td>6</td>
+            <td>4</td>
+            <td>0</td>
+            <td>2</td>
+            <td>+66</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/jaguares.png"
+                alt="Jaguares"
+              />
+              Jaguares (ARG)
+            </td>
+            <td>17</td>
+            <td>7</td>
+            <td>3</td>
+            <td>1</td>
+            <td>3</td>
+            <td>+34</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/hurricanes.png"
+                alt="Hurricanes"
+              />
+              Hurricanes (NZ)
+            </td>
+            <td>17</td>
+            <td>6</td>
+            <td>4</td>
+            <td>0</td>
+            <td>2</td>
+            <td>+33</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/stormers.png"
+                alt="Stormers"
+              />
+              Stormers (SA)
+            </td>
+            <td>17</td>
+            <td>6</td>
+            <td>4</td>
+            <td>0</td>
+            <td>2</td>
+            <td>+24</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/rebels.png"
+                alt="Rebels"
+              />
+              Rebels (AUS)
+            </td>
+            <td>13</td>
+            <td>6</td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>+6</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/reds.png"
+                alt="Reds"
+              />
+              Reds (AUS)
+            </td>
+            <td>13</td>
+            <td>7</td>
+            <td>2</td>
+            <td>0</td>
+            <td>5</td>
+            <td>+43</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/highlanders.png"
+                alt="Highlanders"
+              />
+              Highlanders (NZ)
+            </td>
+            <td>7</td>
+            <td>6</td>
+            <td>1</td>
+            <td>1</td>
+            <td>4</td>
+            <td>+72</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/bulls.png"
+                alt="Bulls"
+              />
+              Bulls (SA)
+            </td>
+            <td>6</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>-37</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/lions.png"
+                alt="Lions"
+              />
+              Lions (SA)
+            </td>
+            <td>5</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>-91</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/waratahs.png"
+                alt="Waratahs"
+              />
+              Waratahs (AUS)
+            </td>
+            <td>5</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>-110</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>
+              <img
+                class="section-1__table__img"
+                src="./images/competitions/sunwolves.png"
+                alt="Sunwolves"
+              />
+              Sunwolves (JAP)
+            </td>
+            <td>4</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>-191</td>
+          </tr>
+        </table>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <section class="footer">
-        <div class="links ">
-            <div class="links__container">
-                <ul class="">
-                    <li class="links__btn"><a href="index.html" class="links__link"><i class="fa fa-angle-double-right"></i> Home</a></li>
-                    <li class="links__btn"><a href="news.html" class="links__link"><i class="fa fa-angle-double-right"></i> News</a></li>
-                    <li class="links__btn"><a href="competitions.html" class="links__link"><i class="fa fa-angle-double-right"></i> Competitions</a></li>
-                    <li class="links__btn"><a href="contact.html" class="links__link"><i class="fa fa-angle-double-right"></i> Contact</a></li>
-                </ul>
-            </div>
-            <div class="links__container">
-                <ul class="">
-                    <li class="links__btn"><a href="competitions.html" class="links__link"><i class="fa fa-angle-double-right"></i> Top 14</a></li>
-                    <li class="links__btn"><a href="competitions.html" class="links__link"><i class="fa fa-angle-double-right"></i> Premiership</a></li>
-                    <li class="links__btn"><a href="competitions.html" class="links__link"><i class="fa fa-angle-double-right"></i> 6 Nations</a></li>
-                    <li class="links__btn"><a href="competitions.html" class="links__link"><i class="fa fa-angle-double-right"></i> World Cup</a></li>
-                </ul>
-            </div>
-            <div class="links__container">
-                <ul class="">
-                    <li class="links__btn"><a href="contact.html" class="links__link"><i class="fa fa-angle-double-right"></i> Newsletter</a></li>
-                    <li class="links__btn"><a href="#" class="links__link"><i class="fa fa-angle-double-right"></i> FAQ</a></li>
-                    <li class="links__btn"><a href="#" class="links__link"><i class="fa fa-angle-double-right"></i> Terms & Conditions</a></li>
-                    <li class="links__btn"><a href="#" class="links__link"><i class="fa fa-angle-double-right"></i> Legal mentions</a></li>
-                </ul>
-            </div>
+      <div class="links">
+        <div class="links__container">
+          <ul class="">
+            <li class="links__btn">
+              <a href="index.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Home</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="news.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> News</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="competitions.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Competitions</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="contact.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Contact</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="links__container">
+          <ul class="">
+            <li class="links__btn">
+              <a href="competitions.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Top 14</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="competitions.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Premiership</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="competitions.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> 6 Nations</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="competitions.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> World Cup</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="links__container">
+          <ul class="">
+            <li class="links__btn">
+              <a href="contact.html" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Newsletter</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="#" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> FAQ</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="#" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Terms & Conditions</a
+              >
+            </li>
+            <li class="links__btn">
+              <a href="#" class="links__link"
+                ><i class="fa fa-angle-double-right"></i> Legal mentions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="socials">
-            <ul class="socials__container">
-                <li class="socials__btn"><a href="#" class="socials__link"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="socials__btn"><a href="#" class="socials__link"><i class="fab fa-twitter-square"></i></a></li>
-                <li class="socials__btn"><a href="#" class="socials__link"><i class="fab fa-instagram-square"></i></a></li>
-                <li class="socials__btn"><a href="#" class="socials__link"><i class="fab fa-google-plus-square"></i></a></li>
-                <li class="socials__btn"><a href="#" class="socials__link"><i class="fa fa-envelope-square"></i></a></li>
-            </ul>
-        </div>
-        <div class="signature">
-            <p>@ Planet Rugby. Designed and developed by <a class="signature__span" href="https://www.linkedin.com/in/alex-fourmy/" target="_blank">Alex Fourmy</a>.</p>
-        </div>
+      <div class="socials">
+        <ul class="socials__container">
+          <li class="socials__btn">
+            <a href="#" class="socials__link"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li class="socials__btn">
+            <a href="#" class="socials__link"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li class="socials__btn">
+            <a href="#" class="socials__link"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+          <li class="socials__btn">
+            <a href="#" class="socials__link"
+              ><i class="fab fa-google-plus-square"></i
+            ></a>
+          </li>
+          <li class="socials__btn">
+            <a href="#" class="socials__link"
+              ><i class="fa fa-envelope-square"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="signature">
+        <p>
+          @ Planet Rugby. Designed and developed by
+          <a
+            class="signature__span"
+            href="https://www.linkedin.com/in/alex-fourmy/"
+            target="_blank"
+            >Alex Fourmy</a
+          >.
+        </p>
+      </div>
     </section>
 
     <script src="./js/competitions.js"></script>
-
-</body>
+  </body>
 </html>
