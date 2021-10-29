@@ -1,6 +1,6 @@
 # planet-rugby 🏈
 
-This repository contains the files of the very first project I have ever build alone and it is about one of my many passions: rugby! 😁
+This repository contains the files of the very first project I have ever built alone and it is about one of my many passions: rugby! 😁
 
 This fictional rugby webzine is also a multi-page website.
 
@@ -14,10 +14,10 @@ This fictional rugby webzine is also a multi-page website.
 ![site image](https://i.imgur.com/tnEhz3L.jpg)
 
 ## What I used 🔨
-My goal with this project was to build my own project from scratch to practice HTML, CSS and a bit of JavScript.
+My goal with this project was to build my own project from scratch to practice HTML, CSS, SASS and JavScript.
 
 ## Extra learning ✔
-I also wanted to practice some of the common fundamentals of HTML and CSS such has full responsivity, grid layout and adding a page loader.
+I also wanted to practice some of the common basics and fundamentals of HTML and CSS such as animations, tables, glassmorphism, grid layout, flexbox, carousel, video integration, video sliders, contact forms
 
 ## Responsiveness 📱
 This project is responsive on any device screens.
