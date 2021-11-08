@@ -14,7 +14,7 @@ This fictional rugby webzine is also a multi-page website.
 ![site image](https://i.imgur.com/tnEhz3L.jpg)
 
 ## What I used 🔨
-My goal with this project was to build my own project from scratch to practice HTML, CSS, SASS and JavScript.
+My goal with this project was to build my own project from scratch to practice HTML, CSS, SASS and JavaScript.
 
 ## Extra learning ✔
 I also wanted to practice some of the common basics and fundamentals of HTML and CSS such as animations, tables, glassmorphism, grid layout, flexbox, carousel, video integration, video sliders, contact forms
